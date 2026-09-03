@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
   <!-- todo run installer again, should not display uninstall -->
   <?ifdef env.APPVEYOR_BUILD_VERSION ?>
@@ -19,7 +19,7 @@
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
       <bal:WixStandardBootstrapperApplication
         LicenseUrl=""
-        LogoFile="installer.png"
+        LogoFile="logo.png"
         SuppressRepair="yes"
         SuppressOptionsUI="yes"
         ShowVersion="yes"

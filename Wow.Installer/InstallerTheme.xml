@@ -20,7 +20,6 @@
     <Hypertext Name="WelcomeText" X="11" Y="100" Width="-11" Height="20" TabStop="yes" FontId="3" >Wow Full Installer</Hypertext>
     <Checkbox Name="WowCheckbox" X="11" Y="120" Width="260" Height="20" TabStop="yes" FontId="3">Install Wow</Checkbox>
     <Checkbox Name="EverythingCheckbox" X="11" Y="140" Width="260" Height="20" TabStop="yes" FontId="3">Install Everything</Checkbox>
-    <Checkbox Name="PythonCheckbox" X="11" Y="160" Width="260" Height="20" TabStop="yes" FontId="3">Install Python</Checkbox>
     
     <Hypertext Name="EulaHyperlink" X="11" Y="121" Width="-11" Height="51" TabStop="yes" FontId="3" HideWhenDisabled="yes">#(loc.InstallLicenseLinkText)</Hypertext>
     <Checkbox Name="EulaAcceptCheckbox" X="-11" Y="-41" Width="260" Height="17" TabStop="yes" FontId="3" HideWhenDisabled="yes">#(loc.InstallAcceptCheckbox)</Checkbox>
