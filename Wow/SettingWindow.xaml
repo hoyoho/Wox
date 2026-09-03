@@ -539,7 +539,7 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <TextBlock Style="{StaticResource FieldLabelStyle}"
-                                               Text="Version" />
+                                               Text="{DynamicResource version}" />
                                     <TextBlock Grid.Column="1" VerticalAlignment="Center"
                                                Text="{Binding Version}" />
                                 </Grid>
