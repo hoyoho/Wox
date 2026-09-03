@@ -682,6 +682,7 @@ namespace Wow.ViewModel
                 SetHotkey(hotkey.Hotkey, (s, e) =>
                 {
                     if (ShouldIgnoreHotkeys()) return;
+                    if (!PluginManager.IsActionKeywordEnabled(hotkey.ActionKeyword)) return;
                     MainWindowVisibility = Visibility.Visible;
                     ChangeQueryText(hotkey.ActionKeyword);
                 });

@@ -141,6 +141,22 @@ namespace Wow.Core.Plugin
             PluginInstaller.Install(path);
         }
 
+        public static bool IsActionKeywordEnabled(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword))
+            {
+                return false;
+            }
+
+            if (keyword == Query.GlobalPluginWildcardSign)
+            {
+                return true;
+            }
+
+            var pair = AllPlugins.FirstOrDefault(p => p.Metadata.ActionKeywords?.Contains(keyword) == true);
+            return pair != null && !pair.Metadata.Disabled;
+        }
+
         public static List<Result> QueryForPlugin(PluginPair pair, Query query)
         {
             try

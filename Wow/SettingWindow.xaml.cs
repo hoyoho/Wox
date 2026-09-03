@@ -317,6 +317,7 @@ namespace Wow
         {
             SetHotkey(hotkey, (o, args) =>
             {
+                if (!PluginManager.IsActionKeywordEnabled(keyword)) return;
                 App.API.ChangeQuery(keyword);
                 Application.Current.MainWindow.Visibility = Visibility.Visible;
             });
@@ -333,6 +334,17 @@ namespace Wow
                 var pair = plugin.PluginPair;
                 pair.Metadata.Disabled = !pair.Metadata.Disabled;
                 _settings.PluginSettings.Plugins[pair.Metadata.ID].Disabled = pair.Metadata.Disabled;
+
+                if (pair.Metadata.Disabled)
+                {
+                    var keyword = PrimaryKeyword(plugin);
+                    var existing = _settings.CustomPluginHotkeys?.FirstOrDefault(o => o.ActionKeyword == keyword);
+                    if (existing != null)
+                    {
+                        RemoveHotkey(existing.Hotkey);
+                        _settings.CustomPluginHotkeys.Remove(existing);
+                    }
+                }
             }
         }
 
