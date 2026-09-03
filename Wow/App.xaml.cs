@@ -5,6 +5,7 @@ using System.Windows;
 using System.Collections.Generic;
 using System.Threading;
 using System.Globalization;
+using Microsoft.Win32;
 
 using CommandLine;
 using NLog;
@@ -59,6 +60,49 @@ namespace Wow
                 });
         }
 
+        private static void EnsureUninstallIcon()
+        {
+            try
+            {
+                using (var root = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall", false))
+                {
+                    if (root == null)
+                    {
+                        return;
+                    }
+
+                    foreach (var subKeyName in root.GetSubKeyNames())
+                    {
+                        using (var key = root.OpenSubKey(subKeyName, true))
+                        {
+                            if (key == null)
+                            {
+                                continue;
+                            }
+
+                            var displayName = key.GetValue("DisplayName") as string;
+                            if (string.IsNullOrEmpty(displayName) ||
+                                displayName.IndexOf("Wow", StringComparison.OrdinalIgnoreCase) < 0)
+                            {
+                                continue;
+                            }
+
+                            var icon = key.GetValue("DisplayIcon") as string;
+                            if (string.IsNullOrEmpty(icon) ||
+                                icon.IndexOf("Wow", StringComparison.OrdinalIgnoreCase) >= 0)
+                            {
+                                key.SetValue("DisplayIcon", Constant.ExecutablePath + ",0", RegistryValueKind.String);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                // ignore, registry may not be writable in non-installed/dev runs
+            }
+        }
+
         [STAThread]
         public static void Main()
         {
@@ -88,6 +132,7 @@ namespace Wow
 
                 Logger.WowInfo("Begin Wow startup----------------------------------------------------");
                 Settings.Initialize();
+                EnsureUninstallIcon();
                 ExceptionFormatter.Initialize(_systemLanguage, Settings.Instance.Language);
                 InsertWowLanguageIntoLog();
 
