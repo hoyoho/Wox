@@ -496,6 +496,7 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="250" />
+                                    <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
@@ -572,6 +573,12 @@
                                         Margin="12,0,0,0"
                                         Click="OnCheckUpdates"
                                         Content="{DynamicResource checkUpdates}" />
+                                <Image Grid.Row="1" Grid.RowSpan="3" Grid.Column="2"
+                                       Source="{Binding AppIcon}"
+                                       Width="76" Height="76"
+                                       Margin="12,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Stretch="Uniform" />
                             </Grid>
                         </Border>
                                     </StackPanel>

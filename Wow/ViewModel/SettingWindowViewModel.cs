@@ -49,7 +49,7 @@ namespace Wow.ViewModel
         {
             if (PortableMode)
             {
-                MessageBox.Show("Portable mode need check update manually in https://github.com/Wow-launcher/Wow/releases");
+                MessageBox.Show("Portable mode need check update manually in https://github.com/hoyoho/Wox/releases");
             }
             else
             {
@@ -450,6 +450,7 @@ namespace Wow.ViewModel
         public string ReleaseNotes => _updater.GitHubRepository + @"/releases/latest";
         public static string Version => Constant.Version;
         public string ActivatedTimes => string.Format(_translater.GetTranslation("about_activate_times"), Settings.ActivateTimes);
+        public ImageSource AppIcon => Wow.Image.ImageLoader.Load(Constant.DefaultIcon);
         #endregion
     }
 }

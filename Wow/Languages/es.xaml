@@ -95,7 +95,7 @@
     <system:String x:Key="checkUpdatesFailed">Las actualizaciones de verificación fallaron, verifique su conexión y configuración de proxy a api.github.com.</system:String>
     <system:String x:Key="downloadUpdatesFailed">
         La desacrga de actualizaciones falló, verifique su conexión y configuración de proxy a github-cloud.s3.amazonaws.com,
-        o vaya a https://github.com/Wox-launcher/Wox/releases para descargar la actualizacion manualmente.
+        o vaya a https://github.com/hoyoho/Wox/releases para descargar la actualizacion manualmente.
     </system:String>
     <system:String x:Key="releaseNotes">Notas de la versión:</system:String>
 

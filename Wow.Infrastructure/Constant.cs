@@ -21,7 +21,7 @@ namespace Wow.Infrastructure
         public static string RootDirectory = Directory.GetParent(ApplicationDirectory).ToString();
 
         public static string PreinstalledDirectory = Path.Combine(ProgramDirectory, Plugins);
-        public const string Issue = "https://github.com/Wow-launcher/Wow/issues/new";
+        public const string Issue = "https://github.com/hoyoho/Wox/issues/new";
 
         public static readonly int ThumbnailSize = 64;
         public static string ImagesDirectory = Path.Combine(ProgramDirectory, "Images");

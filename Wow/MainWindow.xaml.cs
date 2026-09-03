@@ -174,7 +174,7 @@ namespace Wow
                 }
                 catch (InvalidOperationException ex)
                 {
-                    // https://github.com/Wow-launcher/Wow/issues/811
+                    // https://github.com/hoyoho/Wox/issues/811
                     Logger.WowError($"Cannot dray {ex.Message}");
                 }
             }

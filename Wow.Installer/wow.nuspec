@@ -6,7 +6,7 @@
     <iconUrl>https://raw.githubusercontent.com/Wow-launcher/Wow/master/Wow/Resources/app.ico</iconUrl>
     <version>$version$</version>
     <authors>Wow</authors>
-    <projectUrl>https://github.com/Wow-launcher/Wow</projectUrl>
+    <projectUrl>https://github.com/hoyoho/Wox</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Wow - a launcher for windows</description>
     <dependencies>

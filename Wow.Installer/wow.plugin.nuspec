@@ -4,7 +4,7 @@
     <id>Wow.Plugin</id>
     <version>$version$</version>
     <authors>Wow</authors>
-    <projectUrl>https://github.com/Wow-launcher/Wow</projectUrl>
+    <projectUrl>https://github.com/hoyoho/Wox</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Reference this library if you want to develop a wox plugin</description>
     <tags>wox</tags>
