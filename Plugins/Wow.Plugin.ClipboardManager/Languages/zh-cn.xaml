@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="wox_plugin_clipboardmanager_plugin_name">剪贴板管理</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_plugin_description">通过 Wow 快速填充剪贴板。</system:String>
+
+    <system:String x:Key="wox_plugin_clipboardmanager_settings_description">剪贴板条目以表格维护:每条有"名称"与"内容",用上方细编辑框新增,可在表格内直接编辑名称/内容。之后在 Wow 中输入 cv + 关键词搜索,回车把内容复制到剪贴板。</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_column_name">名称</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_column_content">内容</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_column_created">创建时间</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_new_item_label">新条目</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_add">添加</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_items_label">条目列表</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_delete">删除</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_clear_all">清空全部</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_confirm_clear_title">清空全部条目</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_confirm_clear_message">确定要删除全部剪贴板条目吗?此操作不可撤销。</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_max_results_label">最多显示:</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_max_results_hint">在 Wow 中搜索时显示的条目数量(1-100)</system:String>
+
+    <system:String x:Key="wox_plugin_clipboardmanager_no_item">暂无剪贴板条目</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_no_item_subtitle">点击打开插件设置,手动添加第一条内容</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_copy_to_clipboard">按回车复制到剪贴板</system:String>
+    <system:String x:Key="wox_plugin_clipboardmanager_copy_failed">复制失败,请重试。</system:String>
+
+</ResourceDictionary>

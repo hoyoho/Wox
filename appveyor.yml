@@ -1,4 +1,4 @@
-version: 1.4.{build}
+﻿version: 1.4.{build}
 image: Visual Studio 2019
 configuration: Release
 assembly_info:
@@ -10,24 +10,23 @@ assembly_info:
 before_build:
   - ps: nuget restore
 build:
-  project: Wox.sln
+  project: Wow.sln
 after_test:
-  - ps: Copy-Item $env:APPDATA\Wox\Logs\*\*.txt .
-  - msbuild Wox.Installer\Wox.Installer.wixproj /p:Configuration=Release /p:BuildProjectReferences=false /t:Build"
+  - ps: Copy-Item $env:APPDATA\Wow\Logs\*\*.txt .
+  - msbuild Wow.Installer\Wow.Installer.wixproj /p:Configuration=Release /p:BuildProjectReferences=false /t:Build"
 artifacts:
   - path: '*-*-*.txt'
     name: information
-  - path: 'Output\Packages\Wox-*.zip'
+  - path: 'Output\Packages\Wow-*.zip'
     name: installer
-  - path: 'Output\Packages\Wox.Plugin.*.nupkg'
+  - path: 'Output\Packages\Wow.Plugin.*.nupkg'
     name: nuget_package
-  - path: 'Output\Packages\Wox.*.*'
+  - path: 'Output\Packages\Wow.*.*'
     name: installer
-  - path: 'Output\Packages\Wox-*.*'
+  - path: 'Output\Packages\Wow-*.*'
     name: installer
   - path: 'Output\Packages\RELEASES'
     name: installer
-  - path: 'Wox.Installer\Everything*.exe'
+  - path: 'Wow.Installer\Everything*.exe'
     name: installer
-  - path: 'Wox.Installer\python*.exe'
     name: installer

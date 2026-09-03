@@ -1,0 +1,12 @@
+﻿{
+    "ID": "5BF07F4B-100E-4070-B575-C6CB92BFA28E",
+    "ActionKeyword": "cv",
+    "Name": "Clipboard Manager",
+    "Description": "Quickly fill your clipboard with Wow.",
+    "Author": "Wow",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/Wow-launcher/Wow",
+    "ExecuteFileName": "Wow.Plugin.ClipboardManager.dll",
+    "IcoPath": "Images\\clipboard.png"
+}

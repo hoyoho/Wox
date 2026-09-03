@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Wow</id>
+    <title>Wow</title>
+    <iconUrl>https://raw.githubusercontent.com/Wow-launcher/Wow/master/Wow/Resources/app.ico</iconUrl>
+    <version>$version$</version>
+    <authors>Wow</authors>
+    <projectUrl>https://github.com/Wow-launcher/Wow</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wow - a launcher for windows</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="**\*.*" target="lib\net462\" exclude="Wow.vshost.exe;Wow.vshost.exe.config;Wow.vshost.exe.manifest;*.nupkg;Setup.exe;RELEASES"/>
+  </files>
+</package>

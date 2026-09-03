@@ -1,0 +1,12 @@
+{
+    "ID":"D2D2C23B084D422DB66FE0C79D6C2A6A",
+    "ActionKeyword":"wpm",
+    "Name":"Wow Plugin Management",
+    "Description":"Install/Remove/Update wow plugins",
+    "Author":"Wow",
+    "Version":"1.0",
+    "Language":"csharp",
+    "Website":"https://github.com/Wow-launcher/Wow",
+    "ExecuteFileName":"Wow.Plugin.PluginManagement.dll",
+    "IcoPath":"Images\\plugin.png"
+}

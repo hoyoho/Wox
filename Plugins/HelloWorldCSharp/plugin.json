@@ -3,10 +3,10 @@
     "ActionKeyword":"hc",
     "Name":"Hello World CSharp",
     "Description":"Hello World CSharp",
-    "Author":"Wox",
+    "Author":"Wow",
     "Version":"1.0.0",
     "Language":"csharp",
-    "Website":"https://github.com/Wox-launcher/Wox",
+    "Website":"https://github.com/Wow-launcher/Wow",
     "ExecuteFileName":"HelloWorldCSharp.dll",
     "IcoPath":"Images\\app.png",
     "Disabled": true

@@ -1,0 +1,12 @@
+{
+    "ID":"0308FD86DE0A4DEE8D62B9B535370992",
+    "ActionKeyword":"*",
+    "Name":"URL",
+    "Description":"Open the typed URL from Wow",
+    "Author":"Wow",
+    "Version":"1.0.0",
+    "Language":"csharp",
+    "Website":"https://github.com/Wow-launcher/Wow",
+    "ExecuteFileName":"Wow.Plugin.Url.dll",
+    "IcoPath":"Images\\url.png"
+}

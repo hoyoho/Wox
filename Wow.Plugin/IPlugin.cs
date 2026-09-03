@@ -1,0 +1,10 @@
+﻿using System.Collections.Generic;
+
+namespace Wow.Plugin
+{
+    public interface IPlugin
+    {
+        List<Result> Query(Query query);
+        void Init(PluginInitContext context);
+    }
+}

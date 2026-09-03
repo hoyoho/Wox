@@ -2,10 +2,10 @@ WoX
 ===
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020)
-[![Build status](https://ci.appveyor.com/api/projects/status/bfktntbivg32e103?svg=true)](https://ci.appveyor.com/project/bao-qian/wox)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Wox-launcher/wox?include_prereleases)](https://github.com/Wox-launcher/Wox/releases)
-![GitHub Release Date](https://img.shields.io/github/release-date-pre/Wox-launcher/wox?nclude_prereleases)
-[![Github All Releases](https://img.shields.io/github/downloads/Wox-launcher/Wox/total.svg)](https://github.com/Wox-launcher/Wox/releases)
+[![Build status](https://ci.appveyor.com/api/projects/status/bfktntbivg32e103?svg=true)](https://ci.appveyor.com/project/bao-qian/wow)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Wow-launcher/wow?include_prereleases)](https://github.com/Wow-launcher/Wow/releases)
+![GitHub Release Date](https://img.shields.io/github/release-date-pre/Wow-launcher/wow?nclude_prereleases)
+[![Github All Releases](https://img.shields.io/github/downloads/Wow-launcher/Wow/total.svg)](https://github.com/Wow-launcher/Wow/releases)
 
 
 **WoX** is a launcher for Windows that simply works. It's an alternative to [Alfred](https://www.alfredapp.com/) and [Launchy](http://www.launchy.net/).
@@ -20,8 +20,8 @@ Features
   - wyy / wangyiyun → 网易云音乐
 - Keyword plugin search `g search_term`
 - Search youtube, google, twitter and many more
-- Build custom themes at http://www.wox.one/theme/builder
-- Install plugins from http://www.wox.one/plugin
+- Build custom themes at http://www.wow.one/theme/builder
+- Install plugins from http://www.wow.one/plugin
 - Portable mode
 - Auto-complete text suggestion
 - Highlighting of how results are matched during query search
@@ -30,9 +30,9 @@ Features
 Installation
 ------------
 
-- Download from [releases](https://github.com/Wox-launcher/Wox/releases).
-  - Option 1: download `Wox-Full-Installer.*.exe`, which include all dependency.
-  - Option 2: download `Wox.*.exe`, which only include wox itself. You may install Everything and Python using below instruction.
+- Download from [releases](https://github.com/Wow-launcher/Wow/releases).
+  - Option 1: download `Wow-Full-Installer.*.exe`, which include all dependency.
+  - Option 2: download `Wow.*.exe`, which only include wow itself. You may install Everything and Python using below instruction.
 - Windows may complain about security due to code not being signed. This will be fixed later. 
 
 - Requirements:
@@ -52,15 +52,15 @@ Usage
 - Context Menu: <kbd>Ctrl</kbd>+<kbd>O</kbd>
 - Cancel/Return: <kbd>Esc</kbd>
 - Install/Uninstall plugin: type `wpm install/uninstall`
-- Reset: delete `%APPDATA%\Wox`
-- Log: `%APPDATA%\Wox\Logs`
+- Reset: delete `%APPDATA%\Wow`
+- Log: `%APPDATA%\Wow\Logs`
 
 Contribution
 ------------
 
 - First and most importantly, star it!
 - Send PR to master branch
-- I'd appreciate if you could solve [help_wanted](https://github.com/Wox-launcher/Wox/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) labeled issue
+- I'd appreciate if you could solve [help_wanted](https://github.com/Wow-launcher/Wow/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) labeled issue
 
 Build
 -----
@@ -69,9 +69,9 @@ Install Visual Studio 2019 with .NET desktop development and Universal Windows P
 
 Documentation
 -------------
-- [Wiki](https://github.com/Wox-launcher/Wox/wiki)
-- Outdated doc: [WoX doc](http://doc.wox.one).
-- Just ask questions in [issues](https://github.com/Wox-launcher/Wox/issues) for now.
+- [Wiki](https://github.com/Wow-launcher/Wow/wiki)
+- Outdated doc: [WoX doc](http://doc.wow.one).
+- Just ask questions in [issues](https://github.com/Wow-launcher/Wow/issues) for now.
 
 Thanks
 ------
