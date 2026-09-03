@@ -34,7 +34,7 @@
     <Chain>
       <!--passive / no ui install. use exe cause cannot find a way to install msi with command line argument-->
       <ExePackage
-        SourceFile="Everything-1.4.1.969.x64-Setup.exe"
+        SourceFile="Everything-1.4.1.1032.x64-Setup.exe"
         InstallCommand="/S"
         InstallCondition="EverythingCheckbox" 
       />
