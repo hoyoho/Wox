@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -317,7 +317,6 @@ namespace Wow
         {
             SetHotkey(hotkey, (o, args) =>
             {
-                if (!PluginManager.IsActionKeywordEnabled(keyword)) return;
                 App.API.ChangeQuery(keyword);
                 Application.Current.MainWindow.Visibility = Visibility.Visible;
             });
@@ -326,6 +325,59 @@ namespace Wow
         #endregion
 
         #region Plugin
+
+        private static void ClearPluginHotkeyDisplay(FrameworkElement element)
+        {
+            if (element == null)
+            {
+                return;
+            }
+
+            var scope = element;
+            var parent = System.Windows.Media.VisualTreeHelper.GetParent(element);
+            while (parent != null && !(parent is System.Windows.Controls.ItemsControl) && !(parent is System.Windows.Controls.ScrollViewer))
+            {
+                scope = parent as FrameworkElement ?? scope;
+                parent = System.Windows.Media.VisualTreeHelper.GetParent(parent);
+            }
+
+            if (!(element.DataContext is PluginViewModel target))
+            {
+                return;
+            }
+
+            foreach (var hotkeyControl in FindVisualChildren<HotkeyControl>(scope))
+            {
+                if (hotkeyControl.DataContext is PluginViewModel viewModel &&
+                    viewModel.PluginPair.Metadata.ID == target.PluginPair.Metadata.ID)
+                {
+                    hotkeyControl.SetHotkey(string.Empty, false);
+                }
+            }
+        }
+
+        private static IEnumerable<T> FindVisualChildren<T>(DependencyObject parent) where T : DependencyObject
+        {
+            if (parent == null)
+            {
+                yield break;
+            }
+
+            var count = System.Windows.Media.VisualTreeHelper.GetChildrenCount(parent);
+            for (var i = 0; i < count; i++)
+            {
+                var child = System.Windows.Media.VisualTreeHelper.GetChild(parent, i);
+                if (child is T match)
+                {
+                    yield return match;
+                }
+
+                foreach (var descendant in FindVisualChildren<T>(child))
+                {
+                    yield return descendant;
+                }
+            }
+        }
 
         private void OnPluginToggleClick(object sender, RoutedEventArgs e)
         {
@@ -343,6 +395,36 @@ namespace Wow
                     {
                         RemoveHotkey(existing.Hotkey);
                         _settings.CustomPluginHotkeys.Remove(existing);
+                    }
+
+                    foreach (var actionKeyword in pair.Metadata.ActionKeywords)
+                    {
+                        if (actionKeyword == Wow.Plugin.Query.GlobalPluginWildcardSign)
+                        {
+                            continue;
+                        }
+
+                        if (PluginManager.NonGlobalPlugins.TryGetValue(actionKeyword, out var current) && current == pair)
+                        {
+                            PluginManager.NonGlobalPlugins.Remove(actionKeyword);
+                        }
+                    }
+
+                    ClearPluginHotkeyDisplay(element);
+                }
+                else
+                {
+                    foreach (var actionKeyword in pair.Metadata.ActionKeywords)
+                    {
+                        if (actionKeyword == Wow.Plugin.Query.GlobalPluginWildcardSign)
+                        {
+                            continue;
+                        }
+
+                        if (!PluginManager.NonGlobalPlugins.ContainsKey(actionKeyword))
+                        {
+                            PluginManager.NonGlobalPlugins[actionKeyword] = pair;
+                        }
                     }
                 }
             }
