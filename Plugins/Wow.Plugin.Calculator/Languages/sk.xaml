@@ -13,4 +13,5 @@
     <system:String x:Key="wox_plugin_calculator_decimal_seperator_comma">Čiarka (,)</system:String>
     <system:String x:Key="wox_plugin_calculator_decimal_seperator_dot">Bodka (.)</system:String>
     <system:String x:Key="wox_plugin_calculator_max_decimal_places">Max. desatinných miest</system:String>
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_calculator_copy_failed">Copy failed, please try later</system:String></ResourceDictionary>

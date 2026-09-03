@@ -83,7 +83,7 @@ namespace Wow.Plugin.Caculator
                                 }
                                 catch (ExternalException)
                                 {
-                                    MessageBox.Show("Copy failed, please try later");
+                                    MessageBox.Show(Context.API.GetTranslation("wox_plugin_calculator_copy_failed"));
                                     return false;
                                 }
                             }

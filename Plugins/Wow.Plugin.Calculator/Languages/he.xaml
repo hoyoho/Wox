@@ -13,4 +13,5 @@
     <system:String x:Key="wox_plugin_calculator_decimal_seperator_comma">פסיק (,)</system:String>
     <system:String x:Key="wox_plugin_calculator_decimal_seperator_dot">נקודה (.)</system:String>
     <system:String x:Key="wox_plugin_calculator_max_decimal_places">מקסימום ספרות מימין למפריד של המספר העשרוני</system:String>
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_calculator_copy_failed">Copy failed, please try later</system:String></ResourceDictionary>

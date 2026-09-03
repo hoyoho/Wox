@@ -18,4 +18,6 @@
     <system:String x:Key="wox_plugin_sys_plugin_name">Komendy systemowe</system:String>
     <system:String x:Key="wox_plugin_sys_plugin_description">Wykonywanie komend systemowych, np. wyłącz, zablokuj komputer, otwórz ustawienia itp.</system:String>
 
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_sys_please_wait">Please wait...</system:String>
+    <system:String x:Key="wox_plugin_sys_checking_update">Checking for new update</system:String></ResourceDictionary>

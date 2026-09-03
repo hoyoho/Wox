@@ -29,4 +29,6 @@
     <system:String x:Key="wox_plugin_sys_plugin_name">Sistem Komutları</system:String>
     <system:String x:Key="wox_plugin_sys_plugin_description">Sistem ile ilgili komutlara erişim sağlar. ör. shutdown, lock, settings vb.</system:String>
 
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_sys_please_wait">Please wait...</system:String>
+    <system:String x:Key="wox_plugin_sys_checking_update">Checking for new update</system:String></ResourceDictionary>

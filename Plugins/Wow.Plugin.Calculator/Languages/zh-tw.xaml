@@ -13,4 +13,5 @@
     <system:String x:Key="wox_plugin_calculator_decimal_seperator_comma">逗號 （，）</system:String>
     <system:String x:Key="wox_plugin_calculator_decimal_seperator_dot">點 （.）</system:String>
     <system:String x:Key="wox_plugin_calculator_max_decimal_places">最大小數位數</system:String>
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_calculator_copy_failed">複製失敗,請稍後重試</system:String></ResourceDictionary>

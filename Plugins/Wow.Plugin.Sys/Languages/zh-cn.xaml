@@ -27,4 +27,6 @@
     <system:String x:Key="wox_plugin_sys_plugin_name">系统命令</system:String>
     <system:String x:Key="wox_plugin_sys_plugin_description">系统系统相关的命令。例如，关机，锁定，设置等</system:String>
     <system:String x:Key="wox_plugin_sys_check_update">检查 Wow 更新</system:String>
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_sys_please_wait">请稍候…</system:String>
+    <system:String x:Key="wox_plugin_sys_checking_update">正在检查更新</system:String></ResourceDictionary>

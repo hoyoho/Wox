@@ -30,4 +30,6 @@
     <system:String x:Key="wox_plugin_sys_plugin_name">システムコマンド</system:String>
     <system:String x:Key="wox_plugin_sys_plugin_description">システム関連のコマンドを提供します。例:シャットダウン、ロック、設定など</system:String>
 
-</ResourceDictionary>
+
+    <system:String x:Key="wox_plugin_sys_please_wait">Please wait...</system:String>
+    <system:String x:Key="wox_plugin_sys_checking_update">Checking for new update</system:String></ResourceDictionary>

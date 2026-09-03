@@ -239,8 +239,8 @@ namespace Wow.Plugin.Sys
                     {
                         Application.Current.MainWindow.Hide();
                         context.API.CheckForNewUpdate();
-                        context.API.ShowMsg("Please wait...",
-                            "Checking for new update");
+                        context.API.ShowMsg(context.API.GetTranslation("wox_plugin_sys_please_wait"),
+                            context.API.GetTranslation("wox_plugin_sys_checking_update"));
                         return true;
                     }
                 }
