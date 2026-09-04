@@ -3,7 +3,7 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
 	<!--Plugin Info-->
-	<system:String x:Key="wox_plugin_browserbookmark_plugin_name">סייר הסימניות</system:String>
-	<system:String x:Key="wox_plugin_browserbookmark_plugin_description">חפש את הסימניות של הדפדפן שלך</system:String>
+	<system:String x:Key="wow_plugin_browserbookmark_plugin_name">סייר הסימניות</system:String>
+	<system:String x:Key="wow_plugin_browserbookmark_plugin_description">חפש את הסימניות של הדפדפן שלך</system:String>
 
 </ResourceDictionary>

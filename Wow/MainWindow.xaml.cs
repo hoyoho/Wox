@@ -174,7 +174,7 @@ namespace Wow
                 }
                 catch (InvalidOperationException ex)
                 {
-                    // https://github.com/hoyoho/Wox/issues/811
+                    // https://github.com/hoyoho/Wow/issues/811
                     Logger.WowError($"Cannot dray {ex.Message}");
                 }
             }
@@ -209,7 +209,7 @@ namespace Wow
             {
                 // Note that you can have more than one file.
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-                if (files[0].ToLower().EndsWith(".wox"))
+                if (files[0].ToLower().EndsWith(".wow"))
                 {
                     PluginManager.InstallPlugin(files[0]);
                 }

@@ -25,7 +25,7 @@ namespace Wow.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/hoyoho/Wox")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/hoyoho/Wow")]
         public string GithubRepo {
             get {
                 return ((string)(this["GithubRepo"]));

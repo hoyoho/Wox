@@ -200,12 +200,12 @@ namespace Wow.Plugin.Program
 
         public string GetTranslatedPluginTitle()
         {
-            return _context.API.GetTranslation("wox_plugin_program_plugin_name");
+            return _context.API.GetTranslation("wow_plugin_program_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return _context.API.GetTranslation("wox_plugin_program_plugin_description");
+            return _context.API.GetTranslation("wow_plugin_program_plugin_description");
         }
 
         public List<Result> LoadContextMenus(Result selectedResult)

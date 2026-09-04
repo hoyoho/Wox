@@ -4,7 +4,7 @@
     <!--MainWindow-->
     <system:String x:Key="registerHotkeyFailed">Impossibile salvare il tasto di scelta rapida: {0}</system:String>
     <system:String x:Key="couldnotStartCmd">Avvio fallito {0}</system:String>
-    <system:String x:Key="invalidWoxPluginFileFormat">Formato file plugin non valido</system:String>
+    <system:String x:Key="invalidWowPluginFileFormat">Formato file plugin non valido</system:String>
     <system:String x:Key="setAsTopMostInThisQuery">Risultato prioritario con questa query</system:String>
     <system:String x:Key="cancelTopMostInThisQuery">Rimuovi risultato prioritario con questa query</system:String>
     <system:String x:Key="executeQuery">Query d'esecuzione: {0}</system:String>
@@ -15,10 +15,10 @@
     <system:String x:Key="iconTrayExit">Esci</system:String>
 
     <!--Setting General-->
-    <system:String x:Key="wox_settings">Impostaizoni Wox</system:String>
+    <system:String x:Key="wow_settings">Impostaizoni Wow</system:String>
     <system:String x:Key="general">Generale</system:String>
-    <system:String x:Key="startWoxOnSystemStartup">Avvia Wow all'avvio di Windows</system:String>
-    <system:String x:Key="hideWoxWhenLoseFocus">Nascondi Wox quando perde il focus</system:String>
+    <system:String x:Key="startWowOnSystemStartup">Avvia Wow all'avvio di Windows</system:String>
+    <system:String x:Key="hideWowWhenLoseFocus">Nascondi Wow quando perde il focus</system:String>
     <system:String x:Key="dontPromptUpdateMsg">Non mostrare le notifiche per una nuova versione</system:String>
     <system:String x:Key="rememberLastLocation">Ricorda l'ultima posizione di avvio del launcher</system:String>
     <system:String x:Key="language">Lingua</system:String>
@@ -32,7 +32,7 @@
     <system:String x:Key="autoUpdates">Aggiornamento automatico</system:String>
     <system:String x:Key="updateToPrereleases">Update to Prereleases</system:String>
     <system:String x:Key="selectPythonDirectory">Seleziona</system:String>
-    <system:String x:Key="hideOnStartup">Nascondi Wox all'avvio</system:String>
+    <system:String x:Key="hideOnStartup">Nascondi Wow all'avvio</system:String>
 
     <!--Setting Plugin-->
     <system:String x:Key="plugin">Plugin</system:String>
@@ -47,7 +47,7 @@
     <!--Setting Theme-->
     <system:String x:Key="theme">Tema</system:String>
     <system:String x:Key="browserMoreThemes">Sfoglia per altri temi</system:String>
-    <system:String x:Key="helloWox">Hello Wox</system:String>
+    <system:String x:Key="helloWow">Hello Wow</system:String>
     <system:String x:Key="queryBoxFont">Font campo di ricerca</system:String>
     <system:String x:Key="resultItemFont">Font campo risultati</system:String>
     <system:String x:Key="resultItemHighlightFont">Result Item Highlight Font</system:String>
@@ -56,7 +56,7 @@
 
     <!--Setting Hotkey-->
     <system:String x:Key="hotkey">Tasti scelta rapida</system:String>
-    <system:String x:Key="woxHotkey">Tasto scelta rapida Wox</system:String>
+    <system:String x:Key="wowHotkey">Tasto scelta rapida Wow</system:String>
     <system:String x:Key="customQueryHotkey">Tasti scelta rapida per ricerche personalizzate</system:String>
     <system:String x:Key="delete">Cancella</system:String>
     <system:String x:Key="edit">Modifica</system:String>
@@ -84,13 +84,13 @@
     <system:String x:Key="about">About</system:String>
     <system:String x:Key="website">Sito web</system:String>
     <system:String x:Key="version">Versione</system:String>
-    <system:String x:Key="about_activate_times">Hai usato Wox {0} volte</system:String>
+    <system:String x:Key="about_activate_times">Hai usato Wow {0} volte</system:String>
     <system:String x:Key="checkUpdates">Cerca aggiornamenti</system:String>
-    <system:String x:Key="newVersionTips">Una nuova versione {0} è disponibile, riavvia Wox per favore.</system:String>
+    <system:String x:Key="newVersionTips">Una nuova versione {0} è disponibile, riavvia Wow per favore.</system:String>
     <system:String x:Key="checkUpdatesFailed">Ricerca aggiornamenti fallita, per favore controlla la tua connessione e le eventuali impostazioni proxy per api.github.com.</system:String>
     <system:String x:Key="downloadUpdatesFailed">
 		Download degli aggiornamenti fallito, per favore controlla la tua connessione ed eventuali impostazioni proxy per github-cloud.s3.amazonaws.com, 
-		oppure vai su https://github.com/hoyoho/Wox/releases per scaricare gli aggiornamenti manualmente.
+		oppure vai su https://github.com/hoyoho/Wow/releases per scaricare gli aggiornamenti manualmente.
     </system:String>
     <system:String x:Key="releaseNotes">Note di rilascio:</system:String>
 
@@ -128,17 +128,17 @@
     <system:String x:Key="reportWindow_sending">Invio in corso</system:String>
     <system:String x:Key="reportWindow_report_succeed">Rapporto inviato correttamente</system:String>
     <system:String x:Key="reportWindow_report_failed">Invio rapporto fallito</system:String>
-    <system:String x:Key="reportWindow_wox_got_an_error">Wox ha riportato un errore</system:String>
+    <system:String x:Key="reportWindow_wow_got_an_error">Wow ha riportato un errore</system:String>
 
     <!--update-->
-    <system:String x:Key="update_wox_update_new_version_available">E' disponibile la nuova release {0} di Wox</system:String>
-    <system:String x:Key="update_wox_update_error">Errore durante l'installazione degli aggiornamenti software</system:String>
-    <system:String x:Key="update_wox_update">Aggiorna</system:String>
-    <system:String x:Key="update_wox_update_cancel">Annulla</system:String>
-    <system:String x:Key="update_wox_update_restart_wox_tip">Questo aggiornamento riavvierà Wox</system:String>
-    <system:String x:Key="update_wox_update_upadte_files">I seguenti file saranno aggiornati</system:String>
-    <system:String x:Key="update_wox_update_files">File aggiornati</system:String>
-    <system:String x:Key="update_wox_update_upadte_description">Descrizione aggiornamento</system:String>
+    <system:String x:Key="update_wow_update_new_version_available">E' disponibile la nuova release {0} di Wow</system:String>
+    <system:String x:Key="update_wow_update_error">Errore durante l'installazione degli aggiornamenti software</system:String>
+    <system:String x:Key="update_wow_update">Aggiorna</system:String>
+    <system:String x:Key="update_wow_update_cancel">Annulla</system:String>
+    <system:String x:Key="update_wow_update_restart_wow_tip">Questo aggiornamento riavvierà Wow</system:String>
+    <system:String x:Key="update_wow_update_upadte_files">I seguenti file saranno aggiornati</system:String>
+    <system:String x:Key="update_wow_update_files">File aggiornati</system:String>
+    <system:String x:Key="update_wow_update_upadte_description">Descrizione aggiornamento</system:String>
 
 
     <system:String x:Key="hideNotifyIcon">Hide tray icon</system:String>
@@ -148,4 +148,5 @@
     <system:String x:Key="ShouldUsePinyin">Should Use Pinyin</system:String>
 
     <system:String x:Key="enable">Enable</system:String>
-    <system:String x:Key="searchPlugins">Search plugins</system:String></ResourceDictionary>
+    <system:String x:Key="searchPlugins">Search plugins</system:String>
+</ResourceDictionary>

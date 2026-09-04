@@ -47,7 +47,7 @@ namespace Wow.Core.Resource
             });
             _oldTheme = Path.GetFileNameWithoutExtension(_oldResource.Source.AbsolutePath);
 
-            // https://github.com/hoyoho/Wox/issues/2935
+            // https://github.com/hoyoho/Wow/issues/2935
             var support = Environment.OSVersion.Version.Major >= new Version(10, 0).Major;
             Logger.WowInfo($"Runtime Version {Environment.OSVersion.Version} {support}");
             if (support)

@@ -3,33 +3,34 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <!--Command List-->
-    <system:String x:Key="wox_plugin_sys_command">Command</system:String>
-    <system:String x:Key="wox_plugin_sys_desc">Description</system:String>
+    <system:String x:Key="wow_plugin_sys_command">Command</system:String>
+    <system:String x:Key="wow_plugin_sys_desc">Description</system:String>
 
-    <system:String x:Key="wox_plugin_sys_shutdown_computer">Shutdown Computer</system:String>
-    <system:String x:Key="wox_plugin_sys_restart_computer">Restart Computer</system:String>
-    <system:String x:Key="wox_plugin_sys_log_off">Log off</system:String>
-    <system:String x:Key="wox_plugin_sys_lock">Lock this computer</system:String>
-    <system:String x:Key="wox_plugin_sys_exit">Close Wow</system:String>
-    <system:String x:Key="wox_plugin_sys_restart">Restart Wow</system:String>
-    <system:String x:Key="wox_plugin_sys_setting">Tweak this app</system:String>
-    <system:String x:Key="wox_plugin_sys_sleep">Put computer to sleep</system:String>
-    <system:String x:Key="wox_plugin_sys_emptyrecyclebin">Empty recycle bin</system:String>
-    <system:String x:Key="wox_plugin_sys_hibernate">Hibernate computer</system:String>
-    <system:String x:Key="wox_plugin_sys_save_all_settings">Save all Wow settings</system:String>
-    <system:String x:Key="wox_plugin_sys_reload_plugin_data">Reloads plugin data with new content added after Wow started. Plugins need to have this feature already added.</system:String>
+    <system:String x:Key="wow_plugin_sys_shutdown_computer">Shutdown Computer</system:String>
+    <system:String x:Key="wow_plugin_sys_restart_computer">Restart Computer</system:String>
+    <system:String x:Key="wow_plugin_sys_log_off">Log off</system:String>
+    <system:String x:Key="wow_plugin_sys_lock">Lock this computer</system:String>
+    <system:String x:Key="wow_plugin_sys_exit">Close Wow</system:String>
+    <system:String x:Key="wow_plugin_sys_restart">Restart Wow</system:String>
+    <system:String x:Key="wow_plugin_sys_setting">Tweak this app</system:String>
+    <system:String x:Key="wow_plugin_sys_sleep">Put computer to sleep</system:String>
+    <system:String x:Key="wow_plugin_sys_emptyrecyclebin">Empty recycle bin</system:String>
+    <system:String x:Key="wow_plugin_sys_hibernate">Hibernate computer</system:String>
+    <system:String x:Key="wow_plugin_sys_save_all_settings">Save all Wow settings</system:String>
+    <system:String x:Key="wow_plugin_sys_reload_plugin_data">Reloads plugin data with new content added after Wow started. Plugins need to have this feature already added.</system:String>
 
     <!--Dialogs-->
-    <system:String x:Key="wox_plugin_sys_dlgtitle_success">Success</system:String>
-    <system:String x:Key="wox_plugin_sys_dlgtext_all_settings_saved">All Wow settings saved</system:String>
-    <system:String x:Key="wox_plugin_sys_dlgtext_all_applicableplugins_reloaded">Reloaded all applicable plugin data</system:String>
-    <system:String x:Key="wox_plugin_sys_dlgtext_shutdown_computer">Are you sure you want to shut the computer down?</system:String>
-    <system:String x:Key="wox_plugin_sys_dlgtext_restart_computer">Are you sure you want to restart the computer?</system:String>
+    <system:String x:Key="wow_plugin_sys_dlgtitle_success">Success</system:String>
+    <system:String x:Key="wow_plugin_sys_dlgtext_all_settings_saved">All Wow settings saved</system:String>
+    <system:String x:Key="wow_plugin_sys_dlgtext_all_applicableplugins_reloaded">Reloaded all applicable plugin data</system:String>
+    <system:String x:Key="wow_plugin_sys_dlgtext_shutdown_computer">Are you sure you want to shut the computer down?</system:String>
+    <system:String x:Key="wow_plugin_sys_dlgtext_restart_computer">Are you sure you want to restart the computer?</system:String>
 
-    <system:String x:Key="wox_plugin_sys_plugin_name">System Commands</system:String>
-    <system:String x:Key="wox_plugin_sys_plugin_description">Provides System related commands. e.g. shutdown, lock, settings etc.</system:String>
-    <system:String x:Key="wox_plugin_sys_check_update">Check for new Wow update</system:String>
+    <system:String x:Key="wow_plugin_sys_plugin_name">System Commands</system:String>
+    <system:String x:Key="wow_plugin_sys_plugin_description">Provides System related commands. e.g. shutdown, lock, settings etc.</system:String>
+    <system:String x:Key="wow_plugin_sys_check_update">Check for new Wow update</system:String>
 
 
-    <system:String x:Key="wox_plugin_sys_please_wait">Please wait...</system:String>
-    <system:String x:Key="wox_plugin_sys_checking_update">Checking for new update</system:String></ResourceDictionary>
+    <system:String x:Key="wow_plugin_sys_please_wait">Please wait...</system:String>
+    <system:String x:Key="wow_plugin_sys_checking_update">Checking for new update</system:String>
+</ResourceDictionary>

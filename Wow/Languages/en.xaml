@@ -19,7 +19,7 @@
     <system:String x:Key="queryTextBoxMenuItemSettings">Settings</system:String>
 
     <!--Setting General-->
-    <system:String x:Key="wox_settings">Wow Settings</system:String>
+    <system:String x:Key="wow_settings">Wow Settings</system:String>
     <system:String x:Key="general">General</system:String>
     <system:String x:Key="portableMode">Portable Mode</system:String>
     <system:String x:Key="startWowOnSystemStartup">Start Wow on system startup</system:String>
@@ -37,6 +37,8 @@
     <system:String x:Key="autoUpdates">Auto Update</system:String>
     <system:String x:Key="updateToPrereleases">Update to Prereleases</system:String>
     <system:String x:Key="selectPythonDirectory">Select</system:String>
+    <system:String x:Key="pythonDirectoryUpdated">Restart Wow to apply the new Python directory</system:String>
+    <system:String x:Key="invalidPythonDirectory">No Python executable found in the selected directory</system:String>
     <system:String x:Key="hideOnStartup">Hide Wow on startup</system:String>
     <system:String x:Key="hideNotifyIcon">Hide tray icon</system:String>
     <system:String x:Key="querySearchPrecision">Query Search Precision</system:String>
@@ -67,7 +69,7 @@
 
     <!--Setting Hotkey-->
     <system:String x:Key="hotkey">Hotkey</system:String>
-    <system:String x:Key="woxHotkey">Wow Hotkey</system:String>
+    <system:String x:Key="wowHotkey">Wow Hotkey</system:String>
     <system:String x:Key="customQueryHotkey">Custom Query Hotkey</system:String>
     <system:String x:Key="delete">Delete</system:String>
     <system:String x:Key="edit">Edit</system:String>
@@ -101,7 +103,7 @@
     <system:String x:Key="checkUpdatesFailed">Check updates failed, please check your connection and proxy settings to api.github.com.</system:String>
     <system:String x:Key="downloadUpdatesFailed">
         Download updates failed, please check your connection and proxy settings to github-cloud.s3.amazonaws.com, 
-        or go to https://github.com/hoyoho/Wox/releases to download updates manually.
+        or go to https://github.com/hoyoho/Wow/releases to download updates manually.
     </system:String>
     <system:String x:Key="releaseNotes">Release Notes:</system:String>
 
@@ -139,18 +141,19 @@
     <system:String x:Key="reportWindow_sending">Sending</system:String>
     <system:String x:Key="reportWindow_report_succeed">Report sent successfully</system:String>
     <system:String x:Key="reportWindow_report_failed">Failed to send report</system:String>
-    <system:String x:Key="reportWindow_wox_got_an_error">Wow got an error</system:String>
+    <system:String x:Key="reportWindow_wow_got_an_error">Wow got an error</system:String>
 
     <!--update-->
-    <system:String x:Key="update_wox_update_new_version_available">New Wow release {0} is now available</system:String>
-    <system:String x:Key="update_wox_update_error">An error occurred while trying to install software updates</system:String>
-    <system:String x:Key="update_wox_update">Update</system:String>
-    <system:String x:Key="update_wox_update_cancel">Cancel</system:String>
-    <system:String x:Key="update_wox_update_restart_wox_tip">This upgrade will restart Wow</system:String>
-    <system:String x:Key="update_wox_update_upadte_files">Following files will be updated</system:String>
-    <system:String x:Key="update_wox_update_files">Update files</system:String>
-    <system:String x:Key="update_wox_update_upadte_description">Update description</system:String>
+    <system:String x:Key="update_wow_update_new_version_available">New Wow release {0} is now available</system:String>
+    <system:String x:Key="update_wow_update_error">An error occurred while trying to install software updates</system:String>
+    <system:String x:Key="update_wow_update">Update</system:String>
+    <system:String x:Key="update_wow_update_cancel">Cancel</system:String>
+    <system:String x:Key="update_wow_update_restart_wow_tip">This upgrade will restart Wow</system:String>
+    <system:String x:Key="update_wow_update_upadte_files">Following files will be updated</system:String>
+    <system:String x:Key="update_wow_update_files">Update files</system:String>
+    <system:String x:Key="update_wow_update_upadte_description">Update description</system:String>
 
 
     <system:String x:Key="enable">Enable</system:String>
-    <system:String x:Key="searchPlugins">Search plugins</system:String></ResourceDictionary>
+    <system:String x:Key="searchPlugins">Search plugins</system:String>
+</ResourceDictionary>

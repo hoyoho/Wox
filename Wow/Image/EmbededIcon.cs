@@ -12,7 +12,6 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using Windows.Devices.Scanners;
 using Wow.Infrastructure.Logger;
 namespace Wow.Image
 {

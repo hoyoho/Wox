@@ -3,7 +3,7 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
 	<!--Plugin Info-->
-	<system:String x:Key="wox_plugin_browserbookmark_plugin_name">Prehliadač záložiek</system:String>
-	<system:String x:Key="wox_plugin_browserbookmark_plugin_description">Vyhľadáva záložky prehliadača</system:String>
+	<system:String x:Key="wow_plugin_browserbookmark_plugin_name">Prehliadač záložiek</system:String>
+	<system:String x:Key="wow_plugin_browserbookmark_plugin_description">Vyhľadáva záložky prehliadača</system:String>
 
 </ResourceDictionary>

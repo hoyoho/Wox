@@ -3,14 +3,14 @@
   <metadata>
     <id>Wow</id>
     <title>Wow</title>
-    <iconUrl>https://raw.githubusercontent.com/Wow-launcher/Wow/master/Wow/Resources/app.ico</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/hoyoho/Wow/master/Wow/Resources/app.ico</iconUrl>
     <version>$version$</version>
     <authors>Wow</authors>
-    <projectUrl>https://github.com/hoyoho/Wox</projectUrl>
+    <projectUrl>https://github.com/hoyoho/Wow</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Wow - a launcher for windows</description>
     <dependencies>
-      <group targetFramework=".NETFramework4.6.2" />
+      <group targetFramework=".NETFramework4.7.2" />
     </dependencies>
   </metadata>
   <files>

@@ -15,13 +15,17 @@ namespace Wow.Core.Plugin
 {
     public static class PluginsLoader
     {
+        public const string PATH = "PATH";
+        public const string Python = "python";
+        public const string PythonExecutable = "pythonw.exe";
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
         public static List<PluginPair> Plugins(List<PluginMetadata> metadatas, PluginsSettings settings)
         {
             var csharpPlugins = CSharpPlugins(metadatas).ToList();
+            var pythonPlugins = PythonPlugins(metadatas, settings.PythonDirectory);
             var executablePlugins = ExecutablePlugins(metadatas);
-            var plugins = csharpPlugins.Concat(executablePlugins).ToList();
+            var plugins = csharpPlugins.Concat(pythonPlugins).Concat(executablePlugins).ToList();
             return plugins;
         }
 
@@ -94,6 +98,55 @@ namespace Wow.Core.Plugin
                 });
                 metadata.InitTime += milliseconds;
 
+            });
+            return plugins;
+        }
+
+        public static IEnumerable<PluginPair> PythonPlugins(List<PluginMetadata> source, string pythonDirecotry)
+        {
+            var metadatas = source.Where(o => o.Language.ToUpper() == AllowedLanguage.Python);
+            string filename;
+
+            if (string.IsNullOrEmpty(pythonDirecotry))
+            {
+                var paths = Environment.GetEnvironmentVariable(PATH);
+                if (paths != null)
+                {
+                    var pythonPaths = paths.Split(';').Where(p => p.ToLower().Contains(Python));
+                    if (pythonPaths.Any())
+                    {
+                        filename = PythonExecutable;
+                    }
+                    else
+                    {
+                        Logger.WowError("Python can't be found in PATH.");
+                        return new List<PluginPair>();
+                    }
+                }
+                else
+                {
+                    Logger.WowError("PATH environment variable is not set.");
+                    return new List<PluginPair>();
+                }
+            }
+            else
+            {
+                var path = Path.Combine(pythonDirecotry, PythonExecutable);
+                if (File.Exists(path))
+                {
+                    filename = path;
+                }
+                else
+                {
+                    Logger.WowError("Can't find python executable in given directory");
+                    return new List<PluginPair>();
+                }
+            }
+            Constant.PythonPath = filename;
+            var plugins = metadatas.Select(metadata => new PluginPair
+            {
+                Plugin = new PythonPlugin(filename),
+                Metadata = metadata
             });
             return plugins;
         }

@@ -76,8 +76,8 @@ namespace Wow.Plugin.ClipboardManager.Views
         private void ClearAllButton_Click(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show(
-                Translate("wox_plugin_clipboardmanager_confirm_clear_message"),
-                Translate("wox_plugin_clipboardmanager_confirm_clear_title"),
+                Translate("wow_plugin_clipboardmanager_confirm_clear_message"),
+                Translate("wow_plugin_clipboardmanager_confirm_clear_title"),
                 MessageBoxButton.YesNo,
                 MessageBoxImage.Question);
 

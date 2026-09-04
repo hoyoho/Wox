@@ -30,7 +30,7 @@ namespace Wow.Core.Resource
             AddPluginLanguageDirectories();
             LoadDefaultLanguage();
             // we don't want to load /Languages/en.xaml twice
-            // so add wox language directory after load plugin language files
+            // so add wow language directory after load plugin language files
             AddWowLanguageDirectory();
         }
 

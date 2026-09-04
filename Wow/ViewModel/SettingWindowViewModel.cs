@@ -49,7 +49,7 @@ namespace Wow.ViewModel
         {
             if (PortableMode)
             {
-                MessageBox.Show("Portable mode need check update manually in https://github.com/hoyoho/Wox/releases");
+                MessageBox.Show("Portable mode need check update manually in https://github.com/hoyoho/Wow/releases");
             }
             else
             {
@@ -223,7 +223,7 @@ namespace Wow.ViewModel
 
         #region plugin
 
-        public static string Plugin => "http://www.wox.one/plugin";
+        public static string Plugin => "http://www.wow.one/plugin";
         public PluginViewModel SelectedPlugin { get; set; }
 
         public IList<PluginViewModel> PluginViewModels
@@ -264,7 +264,7 @@ namespace Wow.ViewModel
 
         #region theme
 
-        public static string Theme => @"http://www.wox.one/theme/builder";
+        public static string Theme => @"http://www.wow.one/theme/builder";
 
         public string SelectedTheme
         {
@@ -311,7 +311,7 @@ namespace Wow.ViewModel
                 {
                     new Result
                     {
-                        Title = "WoX is a launcher for Windows that simply works.",
+                        Title = "WoW is a launcher for Windows that simply works.",
                         SubTitle = "You can call it Windows omni-eXecutor if you want a long name.",
                         IcoPath = "Images/app.png"
                     },

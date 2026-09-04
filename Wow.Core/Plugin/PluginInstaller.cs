@@ -13,7 +13,7 @@ namespace Wow.Core.Plugin
         {
             if (File.Exists(path))
             {
-                string tempFoler = Path.Combine(Path.GetTempPath(), "wox\\plugins");
+                string tempFoler = Path.Combine(Path.GetTempPath(), "wow\\plugins");
                 if (Directory.Exists(tempFoler))
                 {
                     Directory.Delete(tempFoler, true);

@@ -112,7 +112,7 @@ namespace Wow.Plugin
         /// <summary>
         /// Install Wow plugin
         /// </summary>
-        /// <param name="path">Plugin path (ends with .wox)</param>
+        /// <param name="path">Plugin path (ends with .wow)</param>
         void InstallPlugin(string path);
 
         /// <summary>

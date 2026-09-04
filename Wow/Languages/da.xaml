@@ -4,7 +4,7 @@
     <!--MainWindow-->
     <system:String x:Key="registerHotkeyFailed">Kunne ikke registrere genvejstast: {0}</system:String>
     <system:String x:Key="couldnotStartCmd">Kunne ikke starte {0}</system:String>
-    <system:String x:Key="invalidWoxPluginFileFormat">Ugyldigt Wox plugin filformat</system:String>
+    <system:String x:Key="invalidWowPluginFileFormat">Ugyldigt Wow plugin filformat</system:String>
     <system:String x:Key="setAsTopMostInThisQuery">Sæt øverst i denne søgning</system:String>
     <system:String x:Key="cancelTopMostInThisQuery">Annuller øverst i denne søgning</system:String>
     <system:String x:Key="executeQuery">Udfør søgning: {0}</system:String>
@@ -15,10 +15,10 @@
     <system:String x:Key="iconTrayExit">Afslut</system:String>
 
     <!--Setting General-->
-    <system:String x:Key="wox_settings">Wox indstillinger</system:String>
+    <system:String x:Key="wow_settings">Wow indstillinger</system:String>
     <system:String x:Key="general">Generelt</system:String>
-    <system:String x:Key="startWoxOnSystemStartup">Start Wox ved system start</system:String>
-    <system:String x:Key="hideWoxWhenLoseFocus">Skjul Wox ved mistet fokus</system:String>
+    <system:String x:Key="startWowOnSystemStartup">Start Wow ved system start</system:String>
+    <system:String x:Key="hideWowWhenLoseFocus">Skjul Wow ved mistet fokus</system:String>
     <system:String x:Key="dontPromptUpdateMsg">Vis ikke notifikationer om nye versioner</system:String>
     <system:String x:Key="rememberLastLocation">Husk seneste position</system:String>
     <system:String x:Key="language">Sprog</system:String>
@@ -28,7 +28,7 @@
     <system:String x:Key="autoUpdates">Autoopdatering</system:String>
     <system:String x:Key="updateToPrereleases">Update to Prereleases</system:String>
     <system:String x:Key="selectPythonDirectory">Vælg</system:String>
-    <system:String x:Key="hideOnStartup">Skjul Wox ved opstart</system:String>
+    <system:String x:Key="hideOnStartup">Skjul Wow ved opstart</system:String>
 
     <!--Setting Plugin-->
     <system:String x:Key="plugin">Plugin</system:String>
@@ -43,7 +43,7 @@
     <!--Setting Theme-->
     <system:String x:Key="theme">Tema</system:String>
     <system:String x:Key="browserMoreThemes">Søg efter flere temaer</system:String>
-    <system:String x:Key="helloWox">Hej Wox</system:String>
+    <system:String x:Key="helloWow">Hej Wow</system:String>
     <system:String x:Key="queryBoxFont">Søgefelt skrifttype</system:String>
     <system:String x:Key="resultItemFont">Resultat skrifttype</system:String>
     <system:String x:Key="resultItemHighlightFont">Result Item Highlight Font</system:String>
@@ -52,7 +52,7 @@
 
     <!--Setting Hotkey-->
     <system:String x:Key="hotkey">Genvejstast</system:String>
-    <system:String x:Key="woxHotkey">Wox genvejstast</system:String>
+    <system:String x:Key="wowHotkey">Wow genvejstast</system:String>
     <system:String x:Key="customQueryHotkey">Tilpasset søgegenvejstast</system:String>
     <system:String x:Key="delete">Slet</system:String>
     <system:String x:Key="edit">Rediger</system:String>
@@ -80,9 +80,9 @@
     <system:String x:Key="about">Om</system:String>
     <system:String x:Key="website">Website</system:String>
     <system:String x:Key="version">Version</system:String>
-    <system:String x:Key="about_activate_times">Du har aktiveret Wox {0} gange</system:String>
+    <system:String x:Key="about_activate_times">Du har aktiveret Wow {0} gange</system:String>
     <system:String x:Key="checkUpdates">Tjek for opdateringer</system:String>
-    <system:String x:Key="newVersionTips">Ny version {0} er tilgængelig, genstart venligst Wox</system:String>
+    <system:String x:Key="newVersionTips">Ny version {0} er tilgængelig, genstart venligst Wow</system:String>
     <system:String x:Key="releaseNotes">Release Notes:</system:String>
 
     <!--Action Keyword Setting Dialog-->
@@ -108,7 +108,7 @@
     <!--Crash Reporter-->
     <system:String x:Key="reportWindow_version">Version</system:String>
     <system:String x:Key="reportWindow_time">Tid</system:String>
-    <system:String x:Key="reportWindow_reproduce">Beskriv venligst hvordan Wox crashede, så vi kan rette det.</system:String>
+    <system:String x:Key="reportWindow_reproduce">Beskriv venligst hvordan Wow crashede, så vi kan rette det.</system:String>
     <system:String x:Key="reportWindow_send_report">Send rapport</system:String>
     <system:String x:Key="reportWindow_cancel">Annuller</system:String>
     <system:String x:Key="reportWindow_general">Generelt</system:String>
@@ -119,17 +119,17 @@
     <system:String x:Key="reportWindow_sending">Sender</system:String>
     <system:String x:Key="reportWindow_report_succeed">Rapport sendt korrekt</system:String>
     <system:String x:Key="reportWindow_report_failed">Kunne ikke sende rapport</system:String>
-    <system:String x:Key="reportWindow_wox_got_an_error">Wox fik en fejl</system:String>
+    <system:String x:Key="reportWindow_wow_got_an_error">Wow fik en fejl</system:String>
 
     <!--update-->
-    <system:String x:Key="update_wox_update_new_version_available">Ny Wox udgivelse {0} er nu tilgængelig</system:String>
-    <system:String x:Key="update_wox_update_error">Der skete en fejl ifm. opdatering af Wox</system:String>
-    <system:String x:Key="update_wox_update">Opdater</system:String>
-    <system:String x:Key="update_wox_update_cancel">Annuler</system:String>
-    <system:String x:Key="update_wox_update_restart_wox_tip">Denne opdatering vil genstarte Wox</system:String>
-    <system:String x:Key="update_wox_update_upadte_files">Følgende filer bliver opdateret</system:String>
-    <system:String x:Key="update_wox_update_files">Opdatereringsfiler</system:String>
-    <system:String x:Key="update_wox_update_upadte_description">Opdateringsbeskrivelse</system:String>
+    <system:String x:Key="update_wow_update_new_version_available">Ny Wow udgivelse {0} er nu tilgængelig</system:String>
+    <system:String x:Key="update_wow_update_error">Der skete en fejl ifm. opdatering af Wow</system:String>
+    <system:String x:Key="update_wow_update">Opdater</system:String>
+    <system:String x:Key="update_wow_update_cancel">Annuler</system:String>
+    <system:String x:Key="update_wow_update_restart_wow_tip">Denne opdatering vil genstarte Wow</system:String>
+    <system:String x:Key="update_wow_update_upadte_files">Følgende filer bliver opdateret</system:String>
+    <system:String x:Key="update_wow_update_files">Opdatereringsfiler</system:String>
+    <system:String x:Key="update_wow_update_upadte_description">Opdateringsbeskrivelse</system:String>
 
 
     <system:String x:Key="hideNotifyIcon">Hide tray icon</system:String>
@@ -140,4 +140,5 @@
     <system:String x:Key="ShouldUsePinyin">Should Use Pinyin</system:String>
 
     <system:String x:Key="enable">Enable</system:String>
-    <system:String x:Key="searchPlugins">Search plugins</system:String></ResourceDictionary>
+    <system:String x:Key="searchPlugins">Search plugins</system:String>
+</ResourceDictionary>

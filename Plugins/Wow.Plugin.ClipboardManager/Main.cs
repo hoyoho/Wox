@@ -92,8 +92,8 @@ namespace Wow.Plugin.ClipboardManager
             {
                 new Result
                 {
-                    Title = _context.API.GetTranslation("wox_plugin_clipboardmanager_no_item"),
-                    SubTitle = _context.API.GetTranslation("wox_plugin_clipboardmanager_no_item_subtitle"),
+                    Title = _context.API.GetTranslation("wow_plugin_clipboardmanager_no_item"),
+                    SubTitle = _context.API.GetTranslation("wow_plugin_clipboardmanager_no_item_subtitle"),
                     IcoPath = ClipboardIco,
                     Action = _ =>
                     {
@@ -107,7 +107,7 @@ namespace Wow.Plugin.ClipboardManager
         private Result BuildResult(ClipboardItem item, string title, string contentLine, bool hasName, int score, List<int> highlightData)
         {
             var created = item.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss");
-            var hint = _context.API.GetTranslation("wox_plugin_clipboardmanager_copy_to_clipboard") +
+            var hint = _context.API.GetTranslation("wow_plugin_clipboardmanager_copy_to_clipboard") +
                        "  ·  " + created;
             var subtitle = hasName
                 ? CapText(contentLine, 180) + "   ·   " + hint
@@ -138,7 +138,7 @@ namespace Wow.Plugin.ClipboardManager
                 return true;
             }
 
-            _context.API.ShowMsg(_context.API.GetTranslation("wox_plugin_clipboardmanager_copy_failed"),
+            _context.API.ShowMsg(_context.API.GetTranslation("wow_plugin_clipboardmanager_copy_failed"),
                 string.Empty, ClipboardIco);
             return false;
         }
@@ -238,12 +238,12 @@ namespace Wow.Plugin.ClipboardManager
 
         public string GetTranslatedPluginTitle()
         {
-            return _context.API.GetTranslation("wox_plugin_clipboardmanager_plugin_name");
+            return _context.API.GetTranslation("wow_plugin_clipboardmanager_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return _context.API.GetTranslation("wox_plugin_clipboardmanager_plugin_description");
+            return _context.API.GetTranslation("wow_plugin_clipboardmanager_plugin_description");
         }
     }
 }

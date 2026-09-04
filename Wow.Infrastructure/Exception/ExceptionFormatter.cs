@@ -14,11 +14,11 @@ namespace Wow.Infrastructure.Exception
     public class ExceptionFormatter
     {
         private static string _systemLanguage;
-        private static string _woxLanguage;
-        public static void Initialize(string systemLanguage, string woxLanguage)
+        private static string _wowLanguage;
+        public static void Initialize(string systemLanguage, string wowLanguage)
         {
             _systemLanguage = systemLanguage;
-            _woxLanguage = woxLanguage;
+            _wowLanguage = wowLanguage;
         }
         public static string FormattedException(System.Exception ex)
         {
@@ -142,14 +142,14 @@ namespace Wow.Infrastructure.Exception
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("## Runtime Info");
             sb.AppendLine($"* Command Line: {Environment.CommandLine}");
-            
+            sb.AppendLine($"* Portable Mode: {DataLocation.PortableDataLocationInUse()}");
             sb.AppendLine($"* Timestamp: {DateTime.Now.ToString(CultureInfo.InvariantCulture)}");
             sb.AppendLine($"* Wow version: {Constant.Version}");
             sb.AppendLine($"* OS Version: {Environment.OSVersion.VersionString}");
             sb.AppendLine($"* x64 OS: {Environment.Is64BitOperatingSystem}");
             sb.AppendLine($"* x64 Process: {Environment.Is64BitProcess}");
             sb.AppendLine($"* System Language: {_systemLanguage}");
-            sb.AppendLine($"* Wow Language: {_woxLanguage}");
+            sb.AppendLine($"* Wow Language: {_wowLanguage}");
             sb.AppendLine($"* CLR Version: {Environment.Version}");
             sb.AppendLine($"* Installed .NET Framework: ");
             foreach (var result in GetFrameworkVersionFromRegistry())
@@ -165,8 +165,8 @@ namespace Wow.Infrastructure.Exception
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("## SDK Info");
-                sb.AppendLine($"* Everything SDK Path: {Constant.EverythingSDKPath}");
-                sb.AppendLine($"* Portable Mode: {DataLocation.PortableDataLocationInUse()}");
+            sb.AppendLine($"* Python Path: {Constant.PythonPath}");
+            sb.AppendLine($"* Everything SDK Path: {Constant.EverythingSDKPath}");
             return sb.ToString();
         }
 
@@ -237,7 +237,7 @@ namespace Wow.Infrastructure.Exception
                     {
                         if (releaseKey == 394806 || releaseKey == 394806)
                         {
-                            result.Add("v4.6.2");
+                            result.Add("v4.7.2");
                         }
                         if (releaseKey == 460798 || releaseKey == 460805)
                         {

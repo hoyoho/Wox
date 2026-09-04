@@ -15,7 +15,7 @@
     <system:String x:Key="iconTrayExit">Ukončiť</system:String>
 
     <!--Setting General-->
-    <system:String x:Key="wox_settings">Nastavenia Wow</system:String>
+    <system:String x:Key="wow_settings">Nastavenia Wow</system:String>
     <system:String x:Key="general">Všeobecné</system:String>
     <system:String x:Key="portableMode">Prenosný režim</system:String>
     <system:String x:Key="startWowOnSystemStartup">Spustiť Wow po štarte systému</system:String>
@@ -64,7 +64,7 @@
 
     <!--Setting Hotkey-->
     <system:String x:Key="hotkey">Klávesové skratky</system:String>
-    <system:String x:Key="woxHotkey">Klávesová skratka pre Wow</system:String>
+    <system:String x:Key="wowHotkey">Klávesová skratka pre Wow</system:String>
     <system:String x:Key="customQueryHotkey">Vlastná klávesová skratka pre dopyt</system:String>
     <system:String x:Key="delete">Odstrániť</system:String>
     <system:String x:Key="edit">Upraviť</system:String>
@@ -98,7 +98,7 @@
     <system:String x:Key="checkUpdatesFailed">Kontrola aktualizácií zlyhala, prosím, skontrolujte pripojenie na internet a nastavenie proxy k api.github.com.</system:String>
     <system:String x:Key="downloadUpdatesFailed">
         Sťahovanie aktualizácií zlyhalo, skontrolujte pripojenie na internet a nastavenie proxy k github-cloud.s3.amazonaws.com, 
-        alebo prejdite na https://github.com/hoyoho/Wox/releases pre manuálne stiahnutie aktualizácií.
+        alebo prejdite na https://github.com/hoyoho/Wow/releases pre manuálne stiahnutie aktualizácií.
     </system:String>
     <system:String x:Key="releaseNotes">Poznámky k vydaniu:</system:String>
 
@@ -136,18 +136,19 @@
     <system:String x:Key="reportWindow_sending">Odosiela sa</system:String>
     <system:String x:Key="reportWindow_report_succeed">Hlásenie bolo úspešne odoslané</system:String>
     <system:String x:Key="reportWindow_report_failed">Odoslanie hlásenia zlyhalo</system:String>
-    <system:String x:Key="reportWindow_wox_got_an_error">Wow zaznamenal chybu</system:String>
+    <system:String x:Key="reportWindow_wow_got_an_error">Wow zaznamenal chybu</system:String>
 
     <!--update-->
-    <system:String x:Key="update_wox_update_new_version_available">Je dostupné nové vydanie Wow {0}</system:String>
-    <system:String x:Key="update_wox_update_error">Počas inštalácie aktualizácií došlo k chybe</system:String>
-    <system:String x:Key="update_wox_update">Aktualizovať</system:String>
-    <system:String x:Key="update_wox_update_cancel">Zrušiť</system:String>
-    <system:String x:Key="update_wox_update_restart_wox_tip">Tento upgrade reštartuje Wow</system:String>
-    <system:String x:Key="update_wox_update_upadte_files">Nasledujúce súbory budú aktualizované</system:String>
-    <system:String x:Key="update_wox_update_files">Aktualizovať súbory</system:String>
-    <system:String x:Key="update_wox_update_upadte_description">Aktualizovať popis</system:String>
+    <system:String x:Key="update_wow_update_new_version_available">Je dostupné nové vydanie Wow {0}</system:String>
+    <system:String x:Key="update_wow_update_error">Počas inštalácie aktualizácií došlo k chybe</system:String>
+    <system:String x:Key="update_wow_update">Aktualizovať</system:String>
+    <system:String x:Key="update_wow_update_cancel">Zrušiť</system:String>
+    <system:String x:Key="update_wow_update_restart_wow_tip">Tento upgrade reštartuje Wow</system:String>
+    <system:String x:Key="update_wow_update_upadte_files">Nasledujúce súbory budú aktualizované</system:String>
+    <system:String x:Key="update_wow_update_files">Aktualizovať súbory</system:String>
+    <system:String x:Key="update_wow_update_upadte_description">Aktualizovať popis</system:String>
 
 
     <system:String x:Key="enable">Enable</system:String>
-    <system:String x:Key="searchPlugins">Search plugins</system:String></ResourceDictionary>
+    <system:String x:Key="searchPlugins">Search plugins</system:String>
+</ResourceDictionary>

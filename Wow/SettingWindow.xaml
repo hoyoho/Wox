@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:wox="clr-namespace:Wow"
+        xmlns:wow="clr-namespace:Wow"
         xmlns:vm="clr-namespace:Wow.ViewModel"
         xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
         xmlns:userSettings="clr-namespace:Wow.Infrastructure.UserSettings;assembly=Wow.Infrastructure"
@@ -10,7 +10,7 @@
         x:Class="Wow.SettingWindow"
         mc:Ignorable="d"
         Icon="app.png"
-        Title="{DynamicResource wox_settings}"
+        Title="{DynamicResource wow_settings}"
         WindowStartupLocation="CenterScreen"
         Width="1000" Height="680"
         MinWidth="780" MinHeight="520"
@@ -227,7 +227,7 @@
                                    Text="{DynamicResource general}" />
 
                         <!-- 主体双栏 -->
-                        <Grid Margin="0,0,0,0">
+                        <Grid Margin="0,0,0,0" Grid.IsSharedSizeScope="True">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
@@ -237,16 +237,17 @@
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
 
-                            <!-- 左卡:开机启动/不显示主窗口/语言/热键 -->
+                            <!-- 左卡:开机启动/不显示主窗口/语言/热键/Python路径 -->
                             <Border Grid.Row="0" Grid.Column="0"
                                     Style="{StaticResource CardStyle}"
                                     Margin="0,0,7,0">
                                 <Grid>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow0" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow1" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow2" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow3" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow4" />
                                     </Grid.RowDefinitions>
                                     <Grid Grid.Row="0" Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
@@ -294,14 +295,37 @@
                                         </Grid.ColumnDefinitions>
                                         <TextBlock Style="{StaticResource FieldLabelStyle}"
                                                    VerticalAlignment="Center"
-                                                   Text="{DynamicResource woxHotkey}" />
-                                        <wox:HotkeyControl Grid.Column="1"
+                                                   Text="{DynamicResource wowHotkey}" />
+                                        <wow:HotkeyControl Grid.Column="1"
                                                            x:Name="HotkeyControl"
                                                            Margin="0,2"
                                                            HorizontalAlignment="Stretch"
                                                            VerticalAlignment="Center"
-                                                           HotkeyChanged="OnHotkeyChanged"
-                                                           Loaded="OnHotkeyControlLoaded" />
+                                                            HotkeyChanged="OnHotkeyChanged"
+                                                            Loaded="OnHotkeyControlLoaded" />
+                                    </Grid>
+                                    <Grid Grid.Row="4" Margin="0,4" VerticalAlignment="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="190" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Style="{StaticResource FieldLabelStyle}"
+                                                   VerticalAlignment="Center"
+                                                   Text="{DynamicResource pythonDirectory}" />
+                                        <Grid Grid.Column="1" Margin="0,2">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox VerticalAlignment="Center"
+                                                     Text="{Binding Settings.PluginSettings.PythonDirectory}"
+                                                     ToolTip="{DynamicResource pythonDirectory}" />
+                                            <Button Grid.Column="1"
+                                                    MinWidth="58" Padding="8,2" Margin="6,0,0,0"
+                                                    VerticalAlignment="Center"
+                                                    Content="{DynamicResource selectPythonDirectory}"
+                                                    Click="OnSelectPythonDirectoryClick" />
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                             </Border>
@@ -310,8 +334,15 @@
                             <Border Grid.Row="0" Grid.Column="1"
                                     Style="{StaticResource CardStyle}"
                                     Margin="7,0,0,0">
-                                <StackPanel>
-                                    <Grid Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow0" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow1" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow2" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow3" />
+                                        <RowDefinition Height="Auto" SharedSizeGroup="GeneralRow4" />
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0" Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
@@ -322,7 +353,7 @@
                                                       IsChecked="{Binding PortableMode}"
                                                       Style="{StaticResource SwitchToggleStyle}" />
                                     </Grid>
-                                    <Grid Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
+                                    <Grid Grid.Row="1" Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
@@ -333,7 +364,7 @@
                                                       IsChecked="{Binding Settings.HideWhenDeactive}"
                                                       Style="{StaticResource SwitchToggleStyle}" />
                                     </Grid>
-                                    <Grid Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
+                                    <Grid Grid.Row="2" Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
@@ -344,7 +375,7 @@
                                                       IsChecked="{Binding Settings.HideNotifyIcon}"
                                                       Style="{StaticResource SwitchToggleStyle}" />
                                     </Grid>
-                                    <Grid Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
+                                    <Grid Grid.Row="3" Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
@@ -355,7 +386,7 @@
                                                       IsChecked="{Binding Settings.RememberLastLaunchLocation}"
                                                       Style="{StaticResource SwitchToggleStyle}" />
                                     </Grid>
-                                    <Grid Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
+                                    <Grid Grid.Row="4" Style="{StaticResource SwitchRowStyle}" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="Auto" />
@@ -366,7 +397,7 @@
                                                       IsChecked="{Binding Settings.IgnoreHotkeysOnFullscreen}"
                                                       Style="{StaticResource SwitchToggleStyle}" />
                                     </Grid>
-                                </StackPanel>
+                                </Grid>
                             </Border>
 
                             <!-- 搜索选项 -->
@@ -765,7 +796,7 @@
                                                                    FontSize="13"
                                                                    VerticalAlignment="Center"
                                                                    Text="{DynamicResource customQueryHotkey}" />
-                                                        <wox:HotkeyControl Grid.Column="1"
+                                                        <wow:HotkeyControl Grid.Column="1"
                                                                            Height="24"
                                                                            HorizontalAlignment="Stretch"
                                                                            VerticalAlignment="Center"
@@ -844,7 +875,7 @@
                                             <TextBox Text="{DynamicResource helloWow}" IsReadOnly="True"
                                                      Style="{DynamicResource QueryBoxStyle}" Grid.Row="0" />
                                             <ContentControl Grid.Row="1">
-                                                <wox:ResultListBox DataContext="{Binding PreviewResults, Mode=OneTime}"
+                                                <wow:ResultListBox DataContext="{Binding PreviewResults, Mode=OneTime}"
                                                                    Visibility="Visible" />
                                             </ContentControl>
                                         </Grid>

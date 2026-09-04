@@ -73,12 +73,12 @@ namespace Wow.Plugin.ControlPanel
 
         public string GetTranslatedPluginTitle()
         {
-            return context.API.GetTranslation("wox_plugin_controlpanel_plugin_name");
+            return context.API.GetTranslation("wow_plugin_controlpanel_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return context.API.GetTranslation("wox_plugin_controlpanel_plugin_description");
+            return context.API.GetTranslation("wow_plugin_controlpanel_plugin_description");
         }
     }
 }

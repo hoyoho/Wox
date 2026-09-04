@@ -192,7 +192,7 @@ namespace Wow.ViewModel
 
             StartHelpCommand = new RelayCommand(_ =>
             {
-                Process.Start("http://doc.wox.one/");
+                Process.Start("http://doc.wow.one/");
             });
 
             RefreshCommand = new RelayCommand(_ => Refresh());

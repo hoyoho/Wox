@@ -19,7 +19,7 @@
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
       <bal:WixStandardBootstrapperApplication
         LicenseUrl=""
-        LogoFile="logo.png"
+        LogoFile="installer.png"
         SuppressRepair="yes"
         SuppressOptionsUI="yes"
         ShowVersion="yes"
@@ -30,6 +30,7 @@
     <!-- default to choose -->
     <Variable Name="WowCheckbox" Value="1"/>
     <Variable Name="EverythingCheckbox" Value="1"/>
+    <Variable Name="PythonCheckbox" Value="1"/>
 
     <Chain>
       <!--passive / no ui install. use exe cause cannot find a way to install msi with command line argument-->
@@ -37,6 +38,13 @@
         SourceFile="Everything-1.4.1.1032.x64-Setup.exe"
         InstallCommand="/S"
         InstallCondition="EverythingCheckbox" 
+      />
+      <!-- passive / no ui install and add PATH env-->
+      <ExePackage
+        SourceFile="python-3.7.7.exe"
+        InstallCommand="/passive PrependPath=1 Include_doc=0 Include_test=0 Include_tcltk=0"
+        UninstallCommand="/uninstall"
+        InstallCondition="PythonCheckbox"
       />
       <ExePackage
         Id="WowPackage"

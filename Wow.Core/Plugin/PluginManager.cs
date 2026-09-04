@@ -46,9 +46,25 @@ namespace Wow.Core.Plugin
             }
         }
 
+        private static void DeletePythonBinding()
+        {
+            const string binding = "wow.py";
+            var directory = DataLocation.PluginsDirectory;
+            foreach (var subDirectory in Directory.GetDirectories(directory))
+            {
+                var path = Path.Combine(subDirectory, binding);
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+            }
+        }
+
         static PluginManager()
         {
             ValidateUserDirectory();
+            // force old plugins use new python binding
+            DeletePythonBinding();
         }
 
         public static void Save()

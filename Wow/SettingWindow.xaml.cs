@@ -153,6 +153,36 @@ namespace Wow
             }
         }
 
+        private void OnSelectPythonDirectoryClick(object sender, RoutedEventArgs e)
+        {
+            var dlg = new VistaFolderBrowserDialog
+            {
+                SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)
+            };
+
+            if (dlg.ShowDialog() != true)
+            {
+                return;
+            }
+
+            var pythonDirectory = dlg.SelectedPath;
+            if (string.IsNullOrEmpty(pythonDirectory))
+            {
+                return;
+            }
+
+            var pythonPath = Path.Combine(pythonDirectory, PluginsLoader.PythonExecutable);
+            if (File.Exists(pythonPath))
+            {
+                _settings.PluginSettings.PythonDirectory = pythonDirectory;
+                MessageBox.Show(InternationalizationManager.Instance.GetTranslation("pythonDirectoryUpdated"));
+            }
+            else
+            {
+                MessageBox.Show(InternationalizationManager.Instance.GetTranslation("invalidPythonDirectory"));
+            }
+        }
+
         private void OnHotkeyControlLoaded(object sender, RoutedEventArgs e)
         {
             HotkeyControl.SetHotkey(_viewModel.Settings.Hotkey, false);

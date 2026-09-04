@@ -66,8 +66,7 @@ namespace Wow.Helper
             SentrySdk.ConfigureScope(scope =>
             {
                 scope.SetExtra("commandLine", Environment.CommandLine);
-            scope.SetExtra("portableMode", DataLocation.PortableDataLocationInUse());
-                
+                scope.SetExtra("portableMode", DataLocation.PortableDataLocationInUse());
                 scope.SetTag("systemLanguage", systemLanguage);
                 scope.SetTag("timezone", TimeZoneInfo.Local.DisplayName);
                 scope.SetExtra("x64OS", Environment.Is64BitOperatingSystem);

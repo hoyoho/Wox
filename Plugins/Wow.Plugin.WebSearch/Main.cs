@@ -51,7 +51,7 @@ namespace Wow.Plugin.WebSearch
                     string keyword = string.Empty;
                     keyword = searchSource.ActionKeyword == SearchSourceGlobalPluginWildCardSign ? query.ToString() : query.Search;
                     var title = keyword;
-                    string subtitle = _context.API.GetTranslation("wox_plugin_websearch_search") + " " + searchSource.Title;
+                    string subtitle = _context.API.GetTranslation("wow_plugin_websearch_search") + " " + searchSource.Title;
 
                     if (string.IsNullOrEmpty(keyword))
                     {
@@ -178,12 +178,12 @@ namespace Wow.Plugin.WebSearch
 
         public string GetTranslatedPluginTitle()
         {
-            return _context.API.GetTranslation("wox_plugin_websearch_plugin_name");
+            return _context.API.GetTranslation("wow_plugin_websearch_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return _context.API.GetTranslation("wox_plugin_websearch_plugin_description");
+            return _context.API.GetTranslation("wow_plugin_websearch_plugin_description");
         }
 
         public event ResultUpdatedEventHandler ResultsUpdated;

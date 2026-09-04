@@ -17,7 +17,7 @@ namespace Wow.Plugin.PluginManagement
 {
     public class Main : IPlugin, IPluginI18n
     {
-        private static string APIBASE = "http://api.wox.one";
+        private static string APIBASE = "http://api.wow.one";
         private static string pluginSearchUrl = APIBASE + "/plugin/search/";
         private const string ListCommand = "list";
         private const string InstallCommand = "install";
@@ -151,7 +151,7 @@ namespace Wow.Plugin.PluginManagement
                     {
                         string folder = Path.Combine(Path.GetTempPath(), "WowPluginDownload");
                         if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
-                        string filePath = Path.Combine(folder, Guid.NewGuid().ToString() + ".wox");
+                        string filePath = Path.Combine(folder, Guid.NewGuid().ToString() + ".wow");
 
                         string pluginUrl = APIBASE + "/media/" + r1.plugin_file;
 
@@ -244,12 +244,12 @@ namespace Wow.Plugin.PluginManagement
 
         public string GetTranslatedPluginTitle()
         {
-            return context.API.GetTranslation("wox_plugin_plugin_management_plugin_name");
+            return context.API.GetTranslation("wow_plugin_plugin_management_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return context.API.GetTranslation("wox_plugin_plugin_management_plugin_description");
+            return context.API.GetTranslation("wow_plugin_plugin_management_plugin_description");
         }
     }
 }

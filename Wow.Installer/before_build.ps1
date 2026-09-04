@@ -30,6 +30,14 @@ function Build-Path {
     return $p
 }
 
+function Copy-Resources ($path, $config) {
+    $project = "$path\Wow"
+    $output = "$path\Output"
+    $target = "$output\$config"
+    Copy-Item -Recurse -Force $path\Plugins\HelloWorldPython $target\Plugins
+    Copy-Item -Recurse -Force $path\JsonRPC $target\JsonRPC
+}
+
 function Delete-Unused ($path, $config) {
     $target = "$path\Output\$config"
     $included = Get-ChildItem $target -Filter "*.dll"
@@ -120,6 +128,7 @@ function Main {
     Write-Host "Config: $config"
     $p = Build-Path
     $v = Build-Version
+    Copy-Resources $p $config
 
     Delete-Unused $p $config
     $o = "$p\Output\Packages"

@@ -4,7 +4,6 @@ using System.Linq;
 using NUnit.Framework;
 using Wow.Core;
 using Wow.Core.Configuration;
-
 using Wow.Core.Plugin;
 using Wow.Infrastructure;
 using Wow.Image;

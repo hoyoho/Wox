@@ -12,7 +12,6 @@ using NLog;
 using Wow.Infrastructure;
 using Wow.Infrastructure.Logger;
 using Microsoft.WindowsAPICodePack.Shell;
-using Windows.ApplicationModel.Resources;
 
 namespace Wow.Plugin.Program.Programs
 {
@@ -69,7 +68,7 @@ namespace Wow.Plugin.Program.Programs
             {
                 new Result
                 {
-                    Title = api.GetTranslation("wox_plugin_program_run_as_different_user"),
+                    Title = api.GetTranslation("wow_plugin_program_run_as_different_user"),
                     Action = _ =>
                     {
                         var info = FullPath.SetProcessStartInfo(ParentDirectory);
@@ -82,7 +81,7 @@ namespace Wow.Plugin.Program.Programs
                 },
                 new Result
                 {
-                    Title = api.GetTranslation("wox_plugin_program_run_as_administrator"),
+                    Title = api.GetTranslation("wow_plugin_program_run_as_administrator"),
                     Action = _ =>
                     {
                         var info = new ProcessStartInfo
@@ -100,7 +99,7 @@ namespace Wow.Plugin.Program.Programs
                 },
                 new Result
                 {
-                    Title = api.GetTranslation("wox_plugin_program_open_containing_folder"),
+                    Title = api.GetTranslation("wow_plugin_program_open_containing_folder"),
                     Action = _ =>
                     {
                         Main.StartProcess(Process.Start, new ProcessStartInfo(ParentDirectory));

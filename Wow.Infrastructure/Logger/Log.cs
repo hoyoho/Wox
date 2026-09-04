@@ -16,7 +16,7 @@ namespace Wow.Infrastructure.Logger
         public const string DirectoryName = "Logs";
         public static string CurrentLogDirectory { get; }
 
-        private static string _woxLanguage = "not set";
+        private static string _wowLanguage = "not set";
 
         static Log()
         {
@@ -89,13 +89,13 @@ namespace Wow.Infrastructure.Logger
 #endif
         }
 
-        public static void updateSettingsInfo(string woxLanguage)
+        public static void updateSettingsInfo(string wowLanguage)
         {
-            _woxLanguage = woxLanguage;
+            _wowLanguage = wowLanguage;
 
             SentrySdk.ConfigureScope(scope =>
             {
-                scope.SetTag("woxLanguage", _woxLanguage);
+                scope.SetTag("wowLanguage", _wowLanguage);
             });
         }
 

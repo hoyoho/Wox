@@ -6,7 +6,7 @@
     "Author":"Wow",
     "Version":"1.1",
     "Language":"csharp",
-    "Website":"http://www.getwox.com/plugin",
+    "Website":"http://www.getwow.com/plugin",
     "ExecuteFileName":"Wow.Plugin.browserBookmark.dll",
     "IcoPath":"Images\\bookmark.png"
 }

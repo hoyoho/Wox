@@ -4,7 +4,7 @@
     <!--主視窗-->
     <system:String x:Key="registerHotkeyFailed">登錄快速鍵：{0} 失敗</system:String>
     <system:String x:Key="couldnotStartCmd">啟動命令 {0} 失敗</system:String>
-    <system:String x:Key="invalidWoxPluginFileFormat">無效的 Wox 外掛格式</system:String>
+    <system:String x:Key="invalidWowPluginFileFormat">無效的 Wow 外掛格式</system:String>
     <system:String x:Key="setAsTopMostInThisQuery">在目前查詢中置頂</system:String>
     <system:String x:Key="cancelTopMostInThisQuery">取消置頂</system:String>
     <system:String x:Key="executeQuery">執行查詢：{0}</system:String>
@@ -15,10 +15,10 @@
     <system:String x:Key="iconTrayExit">結束</system:String>
 
     <!--設定，一般-->
-    <system:String x:Key="wox_settings">Wox 設定</system:String>
+    <system:String x:Key="wow_settings">Wow 設定</system:String>
     <system:String x:Key="general">一般</system:String>
-    <system:String x:Key="startWoxOnSystemStartup">開機時啟動</system:String>
-    <system:String x:Key="hideWoxWhenLoseFocus">失去焦點時自動隱藏 Wox</system:String>
+    <system:String x:Key="startWowOnSystemStartup">開機時啟動</system:String>
+    <system:String x:Key="hideWowWhenLoseFocus">失去焦點時自動隱藏 Wow</system:String>
     <system:String x:Key="dontPromptUpdateMsg">不顯示新版本提示</system:String>
     <system:String x:Key="rememberLastLocation">記住上次啟動位置</system:String>
     <system:String x:Key="language">語言</system:String>
@@ -28,6 +28,8 @@
     <system:String x:Key="autoUpdates">自動更新</system:String>
     <system:String x:Key="updateToPrereleases">Update to Prereleases</system:String>
     <system:String x:Key="selectPythonDirectory">選擇</system:String>
+    <system:String x:Key="pythonDirectoryUpdated">請重新啟動 Wow 以套用新的 Python 路徑</system:String>
+    <system:String x:Key="invalidPythonDirectory">選取的目錄中找不到 Python 可執行檔</system:String>
     <system:String x:Key="hideOnStartup">啟動時不顯示主視窗</system:String>
 
     <!--設置，外掛-->
@@ -43,7 +45,7 @@
     <!--設定，主題-->
     <system:String x:Key="theme">主題</system:String>
     <system:String x:Key="browserMoreThemes">瀏覽更多主題</system:String>
-    <system:String x:Key="helloWox">你好，Wox</system:String>
+    <system:String x:Key="helloWow">你好，Wow</system:String>
     <system:String x:Key="queryBoxFont">查詢框字體</system:String>
     <system:String x:Key="resultItemFont">結果項字體</system:String>
     <system:String x:Key="resultItemHighlightFont">Result Item Highlight Font</system:String>
@@ -52,7 +54,7 @@
 
     <!--設置，熱鍵-->
     <system:String x:Key="hotkey">熱鍵</system:String>
-    <system:String x:Key="woxHotkey">Wox 執行熱鍵</system:String>
+    <system:String x:Key="wowHotkey">Wow 執行熱鍵</system:String>
     <system:String x:Key="customQueryHotkey">自定義熱鍵查詢</system:String>
     <system:String x:Key="delete">刪除</system:String>
     <system:String x:Key="edit">編輯</system:String>
@@ -80,9 +82,9 @@
     <system:String x:Key="about">關於</system:String>
     <system:String x:Key="website">網站</system:String>
     <system:String x:Key="version">版本</system:String>
-    <system:String x:Key="about_activate_times">您已經啟動了 Wox {0} 次</system:String>
+    <system:String x:Key="about_activate_times">您已經啟動了 Wow {0} 次</system:String>
     <system:String x:Key="checkUpdates">檢查更新</system:String>
-    <system:String x:Key="newVersionTips">發現有新版本 {0}， 請重新啟動 Wox。</system:String>
+    <system:String x:Key="newVersionTips">發現有新版本 {0}， 請重新啟動 Wow。</system:String>
     <system:String x:Key="releaseNotes">更新說明:</system:String>
 
     <!--Action Keyword 設定對話框-->
@@ -119,17 +121,17 @@
     <system:String x:Key="reportWindow_sending">傳送中</system:String>
     <system:String x:Key="reportWindow_report_succeed">傳送成功</system:String>
     <system:String x:Key="reportWindow_report_failed">傳送失敗</system:String>
-    <system:String x:Key="reportWindow_wox_got_an_error">Wox 出錯啦</system:String>
+    <system:String x:Key="reportWindow_wow_got_an_error">Wow 出錯啦</system:String>
 
     <!--更新-->
-    <system:String x:Key="update_wox_update_new_version_available">發現 Wox 新版本 V{0}</system:String>
-    <system:String x:Key="update_wox_update_error">更新 Wox 出錯</system:String>
-    <system:String x:Key="update_wox_update">更新</system:String>
-    <system:String x:Key="update_wox_update_cancel">取消</system:String>
-    <system:String x:Key="update_wox_update_restart_wox_tip">此更新需要重新啟動 Wox</system:String>
-    <system:String x:Key="update_wox_update_upadte_files">下列檔案會被更新</system:String>
-    <system:String x:Key="update_wox_update_files">更新檔案</system:String>
-    <system:String x:Key="update_wox_update_upadte_description">更新日誌</system:String>
+    <system:String x:Key="update_wow_update_new_version_available">發現 Wow 新版本 V{0}</system:String>
+    <system:String x:Key="update_wow_update_error">更新 Wow 出錯</system:String>
+    <system:String x:Key="update_wow_update">更新</system:String>
+    <system:String x:Key="update_wow_update_cancel">取消</system:String>
+    <system:String x:Key="update_wow_update_restart_wow_tip">此更新需要重新啟動 Wow</system:String>
+    <system:String x:Key="update_wow_update_upadte_files">下列檔案會被更新</system:String>
+    <system:String x:Key="update_wow_update_files">更新檔案</system:String>
+    <system:String x:Key="update_wow_update_upadte_description">更新日誌</system:String>
 
 
     <system:String x:Key="hideNotifyIcon">Hide tray icon</system:String>
@@ -140,4 +142,5 @@
     <system:String x:Key="ShouldUsePinyin">Should Use Pinyin</system:String>
 
     <system:String x:Key="enable">Enable</system:String>
-    <system:String x:Key="searchPlugins">Search plugins</system:String></ResourceDictionary>
+    <system:String x:Key="searchPlugins">Search plugins</system:String>
+</ResourceDictionary>

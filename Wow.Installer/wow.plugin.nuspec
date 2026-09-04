@@ -4,12 +4,12 @@
     <id>Wow.Plugin</id>
     <version>$version$</version>
     <authors>Wow</authors>
-    <projectUrl>https://github.com/hoyoho/Wox</projectUrl>
+    <projectUrl>https://github.com/hoyoho/Wow</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Reference this library if you want to develop a wox plugin</description>
-    <tags>wox</tags>
+    <description>Reference this library if you want to develop a wow plugin</description>
+    <tags>wow</tags>
     <dependencies>
-      <group targetFramework=".NETFramework4.6.2" />
+      <group targetFramework=".NETFramework4.7.2" />
     </dependencies>
   </metadata>
   <files>

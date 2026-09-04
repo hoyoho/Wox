@@ -29,4 +29,5 @@ artifacts:
     name: installer
   - path: 'Wow.Installer\Everything*.exe'
     name: installer
+  - path: 'Wow.Installer\python*.exe'
     name: installer

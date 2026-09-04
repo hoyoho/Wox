@@ -49,7 +49,7 @@ namespace Wow.Plugin.Program
             string s = Environment.ExpandEnvironmentVariables(Directory.Text);
             if (!System.IO.Directory.Exists(s))
             {
-                System.Windows.MessageBox.Show(_context.API.GetTranslation("wox_plugin_program_invalid_path"));
+                System.Windows.MessageBox.Show(_context.API.GetTranslation("wow_plugin_program_invalid_path"));
                 return;
             }
             if (_editing == null)

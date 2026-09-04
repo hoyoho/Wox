@@ -19,7 +19,7 @@
     <system:String x:Key="queryTextBoxMenuItemSettings">设置</system:String>
 
     <!--设置，通用-->
-    <system:String x:Key="wox_settings">Wow设置</system:String>
+    <system:String x:Key="wow_settings">Wow设置</system:String>
     <system:String x:Key="general">通用</system:String>
     <system:String x:Key="portableMode">便携模式</system:String>
     <system:String x:Key="startWowOnSystemStartup">开机启动</system:String>
@@ -37,6 +37,8 @@
     <system:String x:Key="autoUpdates">自动更新</system:String>
     <system:String x:Key="updateToPrereleases">更新到预发布版本</system:String>
     <system:String x:Key="selectPythonDirectory">选择</system:String>
+    <system:String x:Key="pythonDirectoryUpdated">请重启 Wow 以应用新的 Python 路径</system:String>
+    <system:String x:Key="invalidPythonDirectory">所选目录中未找到 Python 可执行文件</system:String>
     <system:String x:Key="hideOnStartup">启动时不显示主窗口</system:String>
     <system:String x:Key="hideNotifyIcon">隐藏任务栏图标</system:String>
     <system:String x:Key="querySearchPrecision">搜索精度</system:String>
@@ -67,7 +69,7 @@
     
     <!--设置，热键-->
     <system:String x:Key="hotkey">热键</system:String>
-    <system:String x:Key="woxHotkey">Wow激活热键</system:String>
+    <system:String x:Key="wowHotkey">Wow激活热键</system:String>
     <system:String x:Key="customQueryHotkey">自定义查询热键</system:String>
     <system:String x:Key="delete">删除</system:String>
     <system:String x:Key="edit">编辑</system:String>
@@ -97,11 +99,11 @@
     <system:String x:Key="version">版本</system:String>
     <system:String x:Key="about_activate_times">你已经激活了Wow {0} 次</system:String>
     <system:String x:Key="checkUpdates">检查更新</system:String>
-    <system:String x:Key="newVersionTips">发现新版本 {0} , 请重启 wox。</system:String>
+    <system:String x:Key="newVersionTips">发现新版本 {0} , 请重启 wow。</system:String>
     <system:String x:Key="checkUpdatesFailed">检查更新失败，请检查到api.github.com的连接情况，以及代理设置。</system:String>
     <system:String x:Key="downloadUpdatesFailed">
         下载更新失败，请检查到github-cloud.s3.amazonaws.com的连接情况，以及代理设置。
-        你也可以前往 https://github.com/hoyoho/Wox/releases 下载并手动更新。
+        你也可以前往 https://github.com/hoyoho/Wow/releases 下载并手动更新。
     </system:String>
     <system:String x:Key="releaseNotes">更新说明:</system:String>
 
@@ -139,18 +141,19 @@
     <system:String x:Key="reportWindow_sending">发送中</system:String>
     <system:String x:Key="reportWindow_report_succeed">发送成功</system:String>
     <system:String x:Key="reportWindow_report_failed">发送失败</system:String>
-    <system:String x:Key="reportWindow_wox_got_an_error">Wow出错啦</system:String>
+    <system:String x:Key="reportWindow_wow_got_an_error">Wow出错啦</system:String>
 
     <!--更新-->
-    <system:String x:Key="update_wox_update_new_version_available">发现Wow新版本 V{0}</system:String>
-    <system:String x:Key="update_wox_update_error">更新Wow出错</system:String>
-    <system:String x:Key="update_wox_update">更新</system:String>
-    <system:String x:Key="update_wox_update_cancel">取消</system:String>
-    <system:String x:Key="update_wox_update_restart_wox_tip">此更新需要重启Wow</system:String>
-    <system:String x:Key="update_wox_update_upadte_files">下列文件会被更新</system:String>
-    <system:String x:Key="update_wox_update_files">更新文件</system:String>
-    <system:String x:Key="update_wox_update_upadte_description">更新日志</system:String>
+    <system:String x:Key="update_wow_update_new_version_available">发现Wow新版本 V{0}</system:String>
+    <system:String x:Key="update_wow_update_error">更新Wow出错</system:String>
+    <system:String x:Key="update_wow_update">更新</system:String>
+    <system:String x:Key="update_wow_update_cancel">取消</system:String>
+    <system:String x:Key="update_wow_update_restart_wow_tip">此更新需要重启Wow</system:String>
+    <system:String x:Key="update_wow_update_upadte_files">下列文件会被更新</system:String>
+    <system:String x:Key="update_wow_update_files">更新文件</system:String>
+    <system:String x:Key="update_wow_update_upadte_description">更新日志</system:String>
 
 
     <system:String x:Key="enable">启用</system:String>
-    <system:String x:Key="searchPlugins">搜索插件</system:String></ResourceDictionary>
+    <system:String x:Key="searchPlugins">搜索插件</system:String>
+</ResourceDictionary>

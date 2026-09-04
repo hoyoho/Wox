@@ -18,22 +18,22 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
             <StackPanel Orientation="Vertical" Width="205">
-                <CheckBox Name="StartMenuEnabled" Click="StartMenuEnabled_Click" Margin="5" Content="{DynamicResource wox_plugin_program_index_start}" />
-                <CheckBox Name="RegistryEnabled" Click="RegistryEnabled_Click"  Margin="5" Content="{DynamicResource wox_plugin_program_index_registry}" />
+                <CheckBox Name="StartMenuEnabled" Click="StartMenuEnabled_Click" Margin="5" Content="{DynamicResource wow_plugin_program_index_start}" />
+                <CheckBox Name="RegistryEnabled" Click="RegistryEnabled_Click"  Margin="5" Content="{DynamicResource wow_plugin_program_index_registry}" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button Height="30" HorizontalAlignment="Right" Margin="10" Width="100" x:Name="btnProgramSuffixes" Click="BtnProgramSuffixes_OnClick" Content="{DynamicResource wox_plugin_program_suffixes}" />
-                <Button Height="30" HorizontalAlignment="Right" Margin="10" Width="100" x:Name="btnReindex" Click="btnReindex_Click" Content="{DynamicResource wox_plugin_program_reindex}" />
+                <Button Height="30" HorizontalAlignment="Right" Margin="10" Width="100" x:Name="btnProgramSuffixes" Click="BtnProgramSuffixes_OnClick" Content="{DynamicResource wow_plugin_program_suffixes}" />
+                <Button Height="30" HorizontalAlignment="Right" Margin="10" Width="100" x:Name="btnReindex" Click="btnReindex_Click" Content="{DynamicResource wow_plugin_program_reindex}" />
             </StackPanel>
         </StackPanel>
-        <Label Grid.Row ="1" HorizontalAlignment="Center" Content="{DynamicResource wox_plugin_program_sources}"/>
+        <Label Grid.Row ="1" HorizontalAlignment="Center" Content="{DynamicResource wow_plugin_program_sources}"/>
         <ListView x:Name="programSourceView" Grid.Row="2" AllowDrop="True" SelectionMode="Extended" GridViewColumnHeader.Click="GridViewColumnHeaderClickedHandler"
             PreviewMouseRightButtonUp="ProgramSourceView_PreviewMouseRightButtonUp"
             DragEnter="programSourceView_DragEnter"
             Drop="programSourceView_Drop" >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="{DynamicResource wox_plugin_program_location}" Width="550">
+                    <GridViewColumn Header="{DynamicResource wow_plugin_program_location}" Width="550">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Location, ConverterParameter=(null), Converter={program:LocationConverter}}"/>
@@ -46,21 +46,21 @@
         <DockPanel  Grid.Row="3">
             <StackPanel x:Name="indexingPanel" Visibility="Hidden" HorizontalAlignment="Left" Orientation="Horizontal">
                 <ProgressBar x:Name="progressBarIndexing" Height="20" Width="80" Minimum="0" Maximum="100" IsIndeterminate="True" />
-                <TextBlock Margin="10 0 0 0" Height="20" HorizontalAlignment="Center" Text="{DynamicResource wox_plugin_program_indexing}" />
+                <TextBlock Margin="10 0 0 0" Height="20" HorizontalAlignment="Center" Text="{DynamicResource wow_plugin_program_indexing}" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button x:Name="btnProgramSourceStatus" Click="btnProgramSoureDelete_OnClick" Width="100" Margin="10" Content="{DynamicResource wox_plugin_program_delete}" />
-                <Button x:Name="btnAddProgramSource" Click="btnAddProgramSource_OnClick" Width="100" Margin="10" Content="{DynamicResource wox_plugin_program_add}"/>
-                <Button x:Name="btnEditProgramSource" Click="btnEditProgramSource_OnClick" Width="100" Margin="10" Content="{DynamicResource wox_plugin_program_edit}"/>
+                <Button x:Name="btnProgramSourceStatus" Click="btnProgramSoureDelete_OnClick" Width="100" Margin="10" Content="{DynamicResource wow_plugin_program_delete}" />
+                <Button x:Name="btnAddProgramSource" Click="btnAddProgramSource_OnClick" Width="100" Margin="10" Content="{DynamicResource wow_plugin_program_add}"/>
+                <Button x:Name="btnEditProgramSource" Click="btnEditProgramSource_OnClick" Width="100" Margin="10" Content="{DynamicResource wow_plugin_program_edit}"/>
             </StackPanel>
         </DockPanel>
-        <Label Grid.Row ="4" HorizontalAlignment="Center" Content="{DynamicResource wox_plugin_program_ignored_sequences}"/>
+        <Label Grid.Row ="4" HorizontalAlignment="Center" Content="{DynamicResource wow_plugin_program_ignored_sequences}"/>
         <ListView x:Name="programIgnoreView" Grid.Row="5" AllowDrop="True"
             DragEnter="programSourceView_DragEnter"
             Drop="programSourceView_Drop" >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="{DynamicResource wox_plugin_program_location}"  Width="550">
+                    <GridViewColumn Header="{DynamicResource wow_plugin_program_location}"  Width="550">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding}"/>
@@ -72,9 +72,9 @@
         </ListView>
         <DockPanel  Grid.Row="6">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button x:Name="btnDeleteIgnoredEntry" Click="btnDeleteIgnored_OnClick" Width="100" Margin="10" Content="{DynamicResource wox_plugin_program_delete}"/>
-                <Button x:Name="btnEditIgnoredEntry" Click="btnEditIgnored_OnClick" Width="100" Margin="10" Content="{DynamicResource wox_plugin_program_edit}"/>
-                <Button x:Name="btnAddIgnoredEntry" Click="btnAddIgnored_OnClick" Width="100" Margin="10" Content="{DynamicResource wox_plugin_program_add}"/>
+                <Button x:Name="btnDeleteIgnoredEntry" Click="btnDeleteIgnored_OnClick" Width="100" Margin="10" Content="{DynamicResource wow_plugin_program_delete}"/>
+                <Button x:Name="btnEditIgnoredEntry" Click="btnEditIgnored_OnClick" Width="100" Margin="10" Content="{DynamicResource wow_plugin_program_edit}"/>
+                <Button x:Name="btnAddIgnoredEntry" Click="btnAddIgnored_OnClick" Width="100" Margin="10" Content="{DynamicResource wow_plugin_program_add}"/>
             </StackPanel>
         </DockPanel>
     </Grid>

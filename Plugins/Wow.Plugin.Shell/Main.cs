@@ -111,14 +111,14 @@ namespace Wow.Plugin.Shell
                 {
                     if (m.Key == cmd)
                     {
-                        result.SubTitle = string.Format(_context.API.GetTranslation("wox_plugin_cmd_cmd_has_been_executed_times"), m.Value);
+                        result.SubTitle = string.Format(_context.API.GetTranslation("wow_plugin_cmd_cmd_has_been_executed_times"), m.Value);
                         return null;
                     }
 
                     var ret = new Result
                     {
                         Title = m.Key,
-                        SubTitle = string.Format(_context.API.GetTranslation("wox_plugin_cmd_cmd_has_been_executed_times"), m.Value),
+                        SubTitle = string.Format(_context.API.GetTranslation("wow_plugin_cmd_cmd_has_been_executed_times"), m.Value),
                         IcoPath = Image,
                         Action = c =>
                         {
@@ -137,7 +137,7 @@ namespace Wow.Plugin.Shell
             {
                 Title = cmd,
                 Score = 5000,
-                SubTitle = _context.API.GetTranslation("wox_plugin_cmd_execute_through_shell"),
+                SubTitle = _context.API.GetTranslation("wow_plugin_cmd_execute_through_shell"),
                 IcoPath = Image,
                 Action = c =>
                 {
@@ -155,7 +155,7 @@ namespace Wow.Plugin.Shell
                 .Select(m => new Result
                 {
                     Title = m.Key,
-                    SubTitle = string.Format(_context.API.GetTranslation("wox_plugin_cmd_cmd_has_been_executed_times"), m.Value),
+                    SubTitle = string.Format(_context.API.GetTranslation("wow_plugin_cmd_cmd_has_been_executed_times"), m.Value),
                     IcoPath = Image,
                     Action = c =>
                     {
@@ -333,12 +333,12 @@ namespace Wow.Plugin.Shell
 
         public string GetTranslatedPluginTitle()
         {
-            return _context.API.GetTranslation("wox_plugin_cmd_plugin_name");
+            return _context.API.GetTranslation("wow_plugin_cmd_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return _context.API.GetTranslation("wox_plugin_cmd_plugin_description");
+            return _context.API.GetTranslation("wow_plugin_cmd_plugin_description");
         }
 
         public List<Result> LoadContextMenus(Result selectedResult)
@@ -347,7 +347,7 @@ namespace Wow.Plugin.Shell
             {
                 new Result
                 {
-                    Title = _context.API.GetTranslation("wox_plugin_cmd_run_as_different_user"),
+                    Title = _context.API.GetTranslation("wow_plugin_cmd_run_as_different_user"),
                     Action = c =>
                     {
                         Task.Run(() =>Execute(ShellCommand.RunAsDifferentUser, PrepareProcessStartInfo(selectedResult.Title)));
@@ -357,7 +357,7 @@ namespace Wow.Plugin.Shell
                 },
                 new Result
                 {
-                    Title = _context.API.GetTranslation("wox_plugin_cmd_run_as_administrator"),
+                    Title = _context.API.GetTranslation("wow_plugin_cmd_run_as_administrator"),
                     Action = c =>
                     {
                         Execute(Process.Start, PrepareProcessStartInfo(selectedResult.Title, true));

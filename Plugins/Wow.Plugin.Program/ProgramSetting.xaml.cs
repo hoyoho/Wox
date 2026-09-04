@@ -54,7 +54,7 @@ namespace Wow.Plugin.Program
             ProgramSource selectedProgramSource = programSourceView.SelectedItem as ProgramSource;
             if (selectedProgramSource != null)
             {
-                string msg = string.Format(context.API.GetTranslation("wox_plugin_program_delete_program_source"), selectedProgramSource.Location);
+                string msg = string.Format(context.API.GetTranslation("wow_plugin_program_delete_program_source"), selectedProgramSource.Location);
 
                 if (MessageBox.Show(msg, string.Empty, MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
@@ -64,7 +64,7 @@ namespace Wow.Plugin.Program
             }
             else
             {
-                string msg = context.API.GetTranslation("wox_plugin_program_pls_select_program_source");
+                string msg = context.API.GetTranslation("wow_plugin_program_pls_select_program_source");
                 MessageBox.Show(msg);
             }
         }
@@ -82,7 +82,7 @@ namespace Wow.Plugin.Program
             }
             else
             {
-                string msg = context.API.GetTranslation("wox_plugin_program_pls_select_program_source");
+                string msg = context.API.GetTranslation("wow_plugin_program_pls_select_program_source");
                 MessageBox.Show(msg);
             }
         }
@@ -150,7 +150,7 @@ namespace Wow.Plugin.Program
             IgnoredEntry selectedIgnoredEntry = programIgnoreView.SelectedItem as IgnoredEntry;
             if (selectedIgnoredEntry != null)
             {
-                string msg = string.Format(context.API.GetTranslation("wox_plugin_program_delete_ignored"), selectedIgnoredEntry);
+                string msg = string.Format(context.API.GetTranslation("wow_plugin_program_delete_ignored"), selectedIgnoredEntry);
 
                 if (MessageBox.Show(msg, string.Empty, MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
@@ -160,7 +160,7 @@ namespace Wow.Plugin.Program
             }
             else
             {
-                string msg = context.API.GetTranslation("wox_plugin_program_pls_select_ignored");
+                string msg = context.API.GetTranslation("wow_plugin_program_pls_select_ignored");
                 MessageBox.Show(msg);
             }
         }
@@ -175,7 +175,7 @@ namespace Wow.Plugin.Program
             }
             else
             {
-                string msg = context.API.GetTranslation("wox_plugin_program_pls_select_ignored");
+                string msg = context.API.GetTranslation("wow_plugin_program_pls_select_ignored");
                 MessageBox.Show(msg);
             }
         }

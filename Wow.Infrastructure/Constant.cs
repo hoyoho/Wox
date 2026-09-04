@@ -21,12 +21,14 @@ namespace Wow.Infrastructure
         public static string RootDirectory = Directory.GetParent(ApplicationDirectory).ToString();
 
         public static string PreinstalledDirectory = Path.Combine(ProgramDirectory, Plugins);
-        public const string Issue = "https://github.com/hoyoho/Wox/issues/new";
+        public const string Issue = "https://github.com/hoyoho/Wow/issues/new";
 
         public static readonly int ThumbnailSize = 64;
         public static string ImagesDirectory = Path.Combine(ProgramDirectory, "Images");
         public static string DefaultIcon = Path.Combine(ImagesDirectory, "app.png");
         public static string ErrorIcon = Path.Combine(ImagesDirectory, "app_error.png");
+
+        public static string PythonPath;
         public static string EverythingSDKPath;
     }
 }

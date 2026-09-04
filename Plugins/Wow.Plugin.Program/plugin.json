@@ -6,7 +6,7 @@
     "Author":"Wow",
     "Version":"1.0.0",
     "Language":"csharp",
-    "Website":"https://github.com/Wow-launcher/Wow",
+    "Website":"https://github.com/hoyoho/Wow",
     "ExecuteFileName":"Wow.Plugin.Program.dll",
     "IcoPath":"Images\\program.png"
 }

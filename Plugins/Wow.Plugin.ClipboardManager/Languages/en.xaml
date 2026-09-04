@@ -2,26 +2,26 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-    <system:String x:Key="wox_plugin_clipboardmanager_plugin_name">Clipboard Manager</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_plugin_description">Quickly fill your clipboard with Wow.</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_plugin_name">Clipboard Manager</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_plugin_description">Quickly fill your clipboard with Wow.</system:String>
 
-    <system:String x:Key="wox_plugin_clipboardmanager_settings_description">Clipboard items are managed as a table: each entry has a Name and Content. Add new ones with the thin fields above, or edit Name/Content directly in the table. Afterwards, type "cv" + a space + keywords in Wow to search; pressing Enter copies the content to your clipboard.</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_column_name">Name</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_column_content">Content</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_column_created">Created</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_new_item_label">New item</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_add">Add</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_items_label">Items</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_delete">Delete</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_clear_all">Clear All</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_confirm_clear_title">Clear All Items</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_confirm_clear_message">Are you sure you want to delete all clipboard items? This cannot be undone.</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_max_results_label">Max results:</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_max_results_hint">Number of items shown when searching in Wow (1-100)</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_settings_description">Clipboard items are managed as a table: each entry has a Name and Content. Add new ones with the thin fields above, or edit Name/Content directly in the table. Afterwards, type "cv" + a space + keywords in Wow to search; pressing Enter copies the content to your clipboard.</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_column_name">Name</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_column_content">Content</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_column_created">Created</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_new_item_label">New item</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_add">Add</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_items_label">Items</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_delete">Delete</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_clear_all">Clear All</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_confirm_clear_title">Clear All Items</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_confirm_clear_message">Are you sure you want to delete all clipboard items? This cannot be undone.</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_max_results_label">Max results:</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_max_results_hint">Number of items shown when searching in Wow (1-100)</system:String>
 
-    <system:String x:Key="wox_plugin_clipboardmanager_no_item">No clipboard item yet</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_no_item_subtitle">Click to open plugin settings and add your first item</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_copy_to_clipboard">Press Enter to copy to clipboard</system:String>
-    <system:String x:Key="wox_plugin_clipboardmanager_copy_failed">Copy failed, please try again.</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_no_item">No clipboard item yet</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_no_item_subtitle">Click to open plugin settings and add your first item</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_copy_to_clipboard">Press Enter to copy to clipboard</system:String>
+    <system:String x:Key="wow_plugin_clipboardmanager_copy_failed">Copy failed, please try again.</system:String>
 
 </ResourceDictionary>

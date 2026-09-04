@@ -68,7 +68,7 @@ namespace Wow.Plugin.Url
                     new Result
                     {
                         Title = raw,
-                        SubTitle = string.Format(context.API.GetTranslation("wox_plugin_url_open_url"),raw),
+                        SubTitle = string.Format(context.API.GetTranslation("wow_plugin_url_open_url"),raw),
                         IcoPath = "Images/url.png",
                         Score = 8,
                         Action = _ =>
@@ -92,7 +92,7 @@ namespace Wow.Plugin.Url
                             }
                             catch(Exception)
                             {
-                                context.API.ShowMsg(string.Format(context.API.GetTranslation("wox_plugin_url_canot_open_url"), raw));
+                                context.API.ShowMsg(string.Format(context.API.GetTranslation("wow_plugin_url_canot_open_url"), raw));
                                 return false;
                             }
                         }
@@ -132,12 +132,12 @@ namespace Wow.Plugin.Url
 
         public string GetTranslatedPluginTitle()
         {
-            return context.API.GetTranslation("wox_plugin_url_plugin_name");
+            return context.API.GetTranslation("wow_plugin_url_plugin_name");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return context.API.GetTranslation("wox_plugin_url_plugin_description");
+            return context.API.GetTranslation("wow_plugin_url_plugin_description");
         }
     }
 }

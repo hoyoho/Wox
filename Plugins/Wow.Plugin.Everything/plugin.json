@@ -6,7 +6,7 @@
     "Author":"Wow",
     "Version":"1.1.0",
     "Language":"csharp",
-    "Website":"http://www.wox.one",
+    "Website":"http://www.wow.one",
     "IcoPath":"Images\\find.png",
     "ExecuteFileName":"Wow.Plugin.Everything.dll",
 }

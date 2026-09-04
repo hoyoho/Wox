@@ -316,7 +316,7 @@ namespace Wow.Plugin.Program.Programs
                 {
                     new Result
                     {
-                        Title = api.GetTranslation("wox_plugin_program_open_containing_folder"),
+                        Title = api.GetTranslation("wow_plugin_program_open_containing_folder"),
 
                         Action = _ =>
                         {
